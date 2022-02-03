@@ -36,7 +36,7 @@ You'll perform this exercise using the Azure portal.
     
 4. On the select API Option, select the **Core (SQL)**. 
 
-5.  On the Create Azure Cosmos DB Account page, on the Basics tabs, enter the details of the account using the values in the following table, and then select Review + create:
+5.  On the Create Azure Cosmos DB Account page, on the Basics tabs, enter the details of the account using the values in the following table, and then select **Review + create:**
 
     | Field | Value |
     | --- | --- |
@@ -83,7 +83,7 @@ You'll perform this exercise using the Azure portal.
     | --- | --- |
     | Database ID | Select Create new, and enter **contosodb** |
     | Share database throughput | **Check** |
-    | Throughput | Select **Manual**, and specify 400 RU/s (the default) |
+    | Throughput | Select **Manual**, and specify **400** RU/s (the default) |
     | Container ID | **productvolumes** |
     | Partition key | **/productid** (Each product will have a new level recorded each day. Partitioning by product ID enables you to quickly report how the levels for a product vary over time.) |
     | My partition key is larger than 100 bytes | **Leave unchecked** |
@@ -200,7 +200,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
     ![File share](media/fs-sa-select.png "file share")
 
-2.  On the File shares page, select + File share, create a new file share named reports. Leave the Quota **empty** and Tier as **Transaction optimized** and click on Create.
+2.  On the File shares page, select + File share, create a new file share named **reports**. Leave the Quota **empty** and Tier as **Transaction optimized** and click on Create.
 
     ![File share](media/dp9001.png "file share") 
     
