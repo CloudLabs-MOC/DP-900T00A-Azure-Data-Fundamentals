@@ -17,7 +17,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
     ![](media/lab4/2.png)
 
-4.  On the Cosmos DB account page, under Settings, select Keys. Copy the PRIMARY CONNECTION STRING to the clipboard.
+4.  On the Cosmos DB account page, under Settings, select **Keys**. Copy the **PRIMARY CONNECTION STRING** to the Notepad.
 
     ![](media/lab4/3.png)
 
@@ -43,7 +43,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
     ![Image of the Welcome page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-welcome.png)
 
-9. On the Source Information page, in the Import from drop-down list box, select JSON file(s). and then select Add Files.
+9. On the Source Information page, in the Import from drop-down list box, select **JSON file(s)**. and then select Add Files.
 
     ![Image of the Source Information page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-source.png)
 
@@ -61,15 +61,15 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
     | Field | Value |
     | --- | --- |
     | Export to | Azure Cosmos DB - Sequential record import (partitioned collection) |
-    | Connection String | Paste the primary connection string from the clipboard, and append the text *database=ProductData* to the end of the string, after the semi-colon ( ; ) character. |
-    | Collection | ProductCatalog |
+    | Connection String | Paste the primary connection string from the Notepad, and append the text *database=ProductData* to the end of the string, after the semi-colon ( ; ) character.(example: AccountEndpoint=https://cosmosDID.documents.azure.com:443/;AccountKey=OZtdelhcg1TugSAHjZcbcLOtwfADyVsX7GbDYgabA0czOlAEtFtttFPiB7kRFE6CHxrkFLqNdn9mR5Y3A2NwVQ==;database=ProductData) |
+    | Collection | Type **ProductCatalog** |
     | Partition Key | /productcategory/subcategory |
     | Collection Throughput | 1000 |
-    | ID | *leave empty* |
+    | ID field | *leave empty* |
 
     ![Image of the Target Information page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-target.png)
 
-13. On the Advanced page, leave all settings at their default values, and then select Next.
+13. On the Advanced page, leave all settings at their default values, and then select **Next**.
 
     ![Image of the Advanced page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-advanced.png)
 
@@ -84,8 +84,6 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 >Note: If you get any errors while importing the data, perform the steps 8-15 again
 
 16. Close the Data Migration Tool.
-
-
 
 ### Task 2: Query product data in Cosmos DB
 -------------------------------
