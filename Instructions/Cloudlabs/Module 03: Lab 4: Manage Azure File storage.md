@@ -96,8 +96,9 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
    ![](media/lab4/task3/10-1.png)
 
-### Task 2: Upload and download files
+### Task 2: Upload and download files (READ ONLY)
 -------------------------------------
+>**Note!:** The following tasks are read only and cannot be performed in the environment.
 
 #### Using Azure cli
 
@@ -156,7 +157,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     dir
     ``` 
     
-#### Using Storage Explorer
+#### Using Storage Explorer (READ ONLY)
 ------------------------------------------
 
 1.  Return to Azure Storage Explorer on your desktop computer.
