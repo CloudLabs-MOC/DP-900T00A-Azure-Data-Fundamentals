@@ -96,26 +96,15 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
    ![](media/lab4/task3/10-1.png)
 
-### Task 2: Upload and download files (READ ONLY)
+### Task 2: Upload and download files
 -------------------------------------
->**Note!:** The following tasks are read only and cannot be performed in the environment.
 
 #### Using Azure cli
 
 1.  Return to the azure portal and open the Cloud Shell window, and make sure to select **Bash** and  then enter **cd lab** command to enter into the lab folder
+2.  Switch to the Azure portal and go to the page for your storage account starting with name **storage**.
 
-2.  Run the following command:
-
-    ```
-    bash findip.sh
-
-    ```
-
-    This command returns the public IP address of your Cloud Shell. Make a note of this address.
-
-3.  Switch to the Azure portal and go to the page for your storage account starting with name **storage**.
-
-4.  Under **Security + networking**, select **Shared access signature**, and create another SAS token, this time for your Cloud Shell. Specify the following settings, and then click Generate SAS and connection string:
+3.  Under **Security + networking**, select **Shared access signature**, and create another SAS token, this time for your Cloud Shell. Specify the following settings, and then click Generate SAS and connection string:
 
     TABLE 2
     | Setting | Value |
@@ -124,7 +113,6 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     | Allowed reource types | Container, and Object |
     | Permissions | Accept the default permissions |
     | Start and expiry date/time | Accept the default values |
-    | Allowed IP addresses | Enter the IP address that you noted in the step 2 of this task |
     | Allowed protocols | HTTPS only |
 
    ![](media/lab4/task3/10.png)
@@ -157,7 +145,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     dir
     ``` 
     
-#### Using Storage Explorer (READ ONLY)
+#### Using Storage Explorer
 ------------------------------------------
 
 1.  Return to Azure Storage Explorer on your desktop computer.
@@ -166,7 +154,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     
     ![](media/lab4/upload-se.png)    
     
-    **Note:** On the Desktop there is folder with name **lab**, you this folder to upload files to Azure share.
+    **Note:** On the Desktop there is folder with name **lab**, Open the lab folder and select the 'Docs' folder and upload the folder to the Azure file share.
     
 3.  Close the documents pane, and the select the documents file share to open it again. The productdocs folder should be listed in the right-hand pane.
     
