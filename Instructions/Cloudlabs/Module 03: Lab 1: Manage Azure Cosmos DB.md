@@ -79,6 +79,8 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
     ![Image of the Results page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-results.png)
     
-    >Note : If you find the import failed with  error, perform the steps from 9 to 15 again.
+    >Note : If you find the import failed with error message, Navigate to your Azure Cosmos DB account, select data explorer and delete the "ProductCatalog" container as shown below. Then perform the steps from 9 to 15 again.
+
+    ![Image of the Results page in the Data Migration Tool](media/cosmosdbdeletedb.png)
 
 16. Close the Data Migration Tool.
