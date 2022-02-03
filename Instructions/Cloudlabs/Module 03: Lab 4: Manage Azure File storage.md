@@ -92,7 +92,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
    ![](media/lab4/task3/8new.png)
 
-1. Right-click File Shares, and then select Create File Share. Add a file share named documents.
+1. Right-click File Shares, and then select Create File Share. Add a file share named **documents**.
 
    ![](media/lab4/task3/10-1.png)
 
@@ -101,7 +101,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
 #### Using Azure cli
 
-1.  Return to the azure portal and open the Cloud Shell window, and make sure you are in the labs folder. If not then enter **cd lab** command to enter into the lab folder
+1.  Return to the azure portal and open the Cloud Shell window, and make sure to select **Bash** and  then enter **cd lab** command to enter into the lab folder
 
 2.  Run the following command:
 
