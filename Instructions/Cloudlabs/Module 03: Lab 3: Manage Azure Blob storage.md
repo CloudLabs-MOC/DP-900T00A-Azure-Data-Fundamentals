@@ -27,9 +27,9 @@ You create a container in an Azure Storage account.
 
     ![](media/lab4/images.png)
 
-#### Upload a blob to Azure Storage:
+### Upload a blob to Azure Storage:
 
-After you've created a container, you can upload blobs. Depending on how you want to organize your blobs, you can also create folders in the container.
+ After you've created a container, you can upload blobs. Depending on how you want to organize your blobs, you can also create folders in the container.
 
 1. In the Azure portal, in the left-hand navigation menu, select Home
 
@@ -43,7 +43,7 @@ After you've created a container, you can upload blobs. Depending on how you wan
 
     ![](media/lab4/images-select.png)
     
-4. Now click on **Upload**, it will open file upload window, select file icon then browse to desktop and go to **lab** folder and it's subfolder **images** then select a file and upload it.
+4. Now click on **Upload**, it will open file upload window, select file icon then browse to **C:\Users\azureuser\Desktop\lab\images** then select a all files (Press Ctrl+A) and upload it.
 
     ![](media/lab4/images-upload.png)   
     ![](media/lab4/images-upload3.png)     
@@ -52,7 +52,7 @@ After you've created a container, you can upload blobs. Depending on how you wan
 
     ![](media/lab4/images-upload2.png)
 
-#### List the blobs in a container:
+### List the blobs in a container:
 
 After you've uploaded files to a container, you can view them in th container folder.
 
@@ -64,7 +64,7 @@ After you've uploaded files to a container, you can view them in th container fo
 
     ![](media/lab4/list-blobs.png)   
 
-#### Download a blob from a container:
+### Download a blob from a container:
 
 1. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images**.
 
@@ -74,11 +74,11 @@ After you've uploaded files to a container, you can view them in th container fo
 
     ![](media/lab4/download-blob.png)
 
-#### Delete a blob from a container
+### Delete a blob from a container
 
 Deleting a blob can reclaim the resources used in the storage container. However, if you've enabled the soft delete option for the storage account, the blob is hidden rather than removed, and you can restore it later.
 
-1. On the Storage Account page, under **Data management**, select **Data protection**. Now select check box **Enable soft delete for blobs** to enable soft delete on blobs
+1. On the Storage Account page, under **Data management**, select **Data protection**. Now select check box **Enable soft delete for blobs** to enable soft delete on blobs then **Select Save**.
 
     ![](media/lab4/soft-delete.png)
 
@@ -86,7 +86,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
 
     ![](media/lab4/images-select.png)
     
-3. In the list of files select any file, it will open a window with details of the file which is selected. Now click on **Delete** to delete the file.    
+3. In the list of files select any file, it will open a window with details of the file which is selected. Now click on **Delete** to delete and select **OK** to delete file.    
 
     ![](media/lab4/delete-blob.png)
 
@@ -94,16 +94,16 @@ Deleting a blob can reclaim the resources used in the storage container. However
 
     ![](media/lab4/show-deleted-blobs.png)
     
-#### Delete an Azure Storage container:
+### Delete an Azure Storage container:
 
-1. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images** then click on **Delete**.
+1. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images** then click on **Delete** and select **OK**.
 
     ![](media/lab4/delete-container.png)
     
 ### Task 2: Using Azure CLI
 --------------------------------   
 
-#### Create an Azure Storage container:
+### Create an Azure Storage container:
 
 1. In the Azure portal, on the left-hand navigation menu select Home and scroll down for Navigate menu and select **Resource Group**. Copy the name of the Resource Group into a notepad for later tasks.
 
@@ -137,9 +137,13 @@ Deleting a blob can reclaim the resources used in the storage container. However
 
      ```
         git clone https://github.com/MicrosoftDocs/mslearn-explore-non-relational-data-stores-azure.git lab
-
+     ```
+     
+     ```
         cd lab
-
+     ```
+     
+     ```
         az storage blob upload \
           --container-name images-cli \
           --account-name <storage account name>  \
