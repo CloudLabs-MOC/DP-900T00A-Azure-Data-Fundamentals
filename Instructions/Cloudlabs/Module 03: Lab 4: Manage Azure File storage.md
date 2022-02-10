@@ -117,11 +117,11 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
    ![](media/lab4/task3/10.png)
    
-5. Make a note of the **SAS token** that is generated.
+4. Make a note of the **SAS token** that is generated.
 
    ![](media/lab4/task3/11.png)
 
-6.  Return to the Cloud Shell and run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
+5.  Return to the Cloud Shell and run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
 
     ```
     azcopy copy 'docs' 'https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>' --recursive
@@ -131,13 +131,13 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     ![](media/lab4/task3/12.png)
     This command uploads all the files in the *docs* folder to a folder named *productdocs* in the *documents* file share. It should upload seven items; one folder and six files.
 
-7. To Download files from Azure file share run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
+6. To Download files from Azure file share run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
 
     ```
     azcopy copy 'https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>' 'localfolder' --recursive
 
     ```        
-8. To verify run below command.
+7. To verify run below command.
     
     ```
     cd localfolder/productdocs/docs
