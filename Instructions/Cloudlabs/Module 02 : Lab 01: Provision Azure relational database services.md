@@ -106,7 +106,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
     
-    ![select postgre service](media/image-100.jpg "select postgre service")
+    ![select postgre service](media/image-100.jpg "postgre service")
 
 7.  Under **Compute + storage**, select **Configure server**.
 
