@@ -71,8 +71,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
     ![new server](media/sql-database-additionalsetting.png "additional")
 
-9.  Select **Review + Create**, and then select **Create** to create your Azure SQL database.
-    
+9.  Select **Review + Create**, and then select **Create** to create your Azure SQL database.  
 
 ### Task 2: Create your Azure Database for PostgreSQL service (Optional)
 
