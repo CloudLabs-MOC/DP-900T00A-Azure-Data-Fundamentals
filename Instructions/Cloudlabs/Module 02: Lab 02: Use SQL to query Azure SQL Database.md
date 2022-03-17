@@ -30,11 +30,11 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ![server firewall add client ip](media/add-client-ip.png "client IP")
 
-6.  Close the Firewall settings page, and return to the Overview page for your database.
+6.  Once the **Success!** Popup appears, Click **Ok**, and Close the Firewall settings page, and return to the Overview page for your database.
 
 7.  On the Overview page, select **Query editor (preview)** in the left menu.
 
-8.  Enter the administrator login and administrator password, this can be found from the **environment details** tab under this resource group **DP900-XXXX**. Select **OK**.
+8.  Enter the **administrator login** and **administrator password**, this can be found from the **environment details** tab under this resource group **DP900-DID**. Select **OK**.
 
     ![db login](media/database-login.png "db login")
 
