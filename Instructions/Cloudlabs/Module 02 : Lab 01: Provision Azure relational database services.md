@@ -50,7 +50,7 @@ Over time if you realize you need additional compute power to keep up with deman
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
     | Location | **Select the default location** |
-    
+
     ![create sql database](media/sql-database-create.png "Creating SQl database")
     
     ![new server](media/sql-new-server-create.png "new server")
