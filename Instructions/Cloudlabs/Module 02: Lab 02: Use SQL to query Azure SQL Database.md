@@ -4,12 +4,11 @@ Contoso has provisioned the SQL database and has imported all the inventory data
 
 In this exercise, you'll query the database to find how many products are in the database, and the number of items in stock for a particular product.
 
-### Task 1: Connect to the query editor
----------------------------
+## Task 1: Connect to the query editor
 
 You'll use the built-in Query editor in the Azure portal to connect to the database and query the data.
 
-1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the Environment Details tab of the lab guide.
+1.  Open **Edge Browser** and log in to the **Azure portal**. When prompted, use the credentials provided within the **Environment Details** tab of the lab guide.
 
     ![Environment details](media/environment-details.png "Environment details")
     
@@ -19,7 +18,6 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ![Resource group](media/dp-900-rg.png "dp-900 rg")
     
-
 3. Select the **Inventory SQL database**. 
     
     ![inventory](media/inventory-in-rg.png "inventory sql")
@@ -46,8 +44,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     
     >**Note**: Adding your client IP in this step will not account for any existing VPN connections. If you can't complete step 7, disable any VPN connections or add the additional IP address manually from any errors displayed.
 
-### Task 2: Run queries against the database
---------------------------------
+## Task 2: Run queries against the database
 
 1.  Copy the following SQL statement into the editor. Select **Run**, to check everything is working. You should see a list of four inventory items
 
@@ -142,3 +139,6 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     ![db query](media/final-result.png "db query")
     
 You've now seen how to run SQL queries against a SQL database. If you have time, try to add some more rows into both tables using INSERT statements, modify the rows using UPDATE statements, and remove rows using DELETE statements.
+
+## Congratulation, You have completed this lab
+------------
