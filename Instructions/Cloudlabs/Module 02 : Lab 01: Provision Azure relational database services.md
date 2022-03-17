@@ -16,7 +16,6 @@ Select a region from the following list when you create resources:
 -   Central India
 
 ### Task 1: Create your Azure SQL Database service
-  --------------------------------------
 
 In this task you'll set up your Azure SQL Database instance, which includes creating your server.
 
@@ -76,7 +75,6 @@ Over time if you realize you need additional compute power to keep up with deman
     
 
 ### Task 2: Create your Azure Database for PostgreSQL service (Optional)
- -------------------------------------------------
 
 In this exercise, you'll set up Azure Database for PostgreSQL
 
@@ -127,7 +125,6 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 10.  Select **Review + Create**, and then select **Create** to create your Azure PostgreSQL database.
 
 ### Task 3 : Create your Azure Database for MySQL service (Optional)
- --------------------------------------------
 
 In this exercise you'll set up Azure Database for MySQL
 
