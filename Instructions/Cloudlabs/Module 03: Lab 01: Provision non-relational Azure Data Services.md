@@ -19,17 +19,17 @@ You'll perform this exercise using the Azure portal.
 
 ## Step 1 : Create a Cosmos DB account
 
-1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the Environment Details tab of the lab guide.
+1.  Open **Edge Browser** and log in to the **Azure portal**. When prompted, use the credentials provided within the **Environment Details** tab of the lab guide.
 
     ![Environment details](media/environment-details.png "Environment details")
 
  >**Note** - The DeploymentID can be obtained from the Lab Environment output page.
 
-2.  From the left-hand navigation menu in the Azure portal, select Create a resource.
+2.  From the left-hand navigation menu in the Azure portal, select **Create a resource**.
 
     ![create a resource](media/create-a-resource-navigation.png "create a resource")
 
-3.  On the create a resource page, select Azure Cosmos DB.
+3.  On the create a resource page, select **Azure Cosmos DB**.
 
     ![select cosmosdb](media/select-cosmosdb.png "select cosmosdb")
     
@@ -50,7 +50,7 @@ You'll perform this exercise using the Azure portal.
 
     ![createcosmosdb](media/create-cosmosdb-1.png "create cosmosdb")
 
-6. enter the details of the account using the values in the following table and then, Selelct **Review + create:**
+6. Enter the details of the account using the values in the following table and then, Selelct **Review + create:**
    
     | Field | Value |
     | --- | --- |
@@ -61,13 +61,13 @@ You'll perform this exercise using the Azure portal.
 
 7.  Wait while your settings are validated. If there's a problem, it will be reported at this stage, and you can go back and correct the issue.
 
-8.  Select Create. It can take 10 or 15 minutes to create the account.
+8.  Select **Create**. It can take 5 or 10 minutes to create the account.
 
     ![validation success](media/validation-success.png "validation success")
     
 ## Step 2 : Create a database and a container
 
-1.  In the Azure portal, in the left-hand navigation menu, select All resources, and then select your Cosmos DB account.
+1.  In the **Azure portal**, in the left-hand navigation menu, select **All resources**, and then select **your Cosmos DB account**.
 
     ![all resources](media/all-resources.png "all resources")
 
@@ -79,7 +79,7 @@ You'll perform this exercise using the Azure portal.
 
     ![new container](media/select-new-container-cosmosdb.png " new Container")
 
-4.  In the Add Container dialog box, create a new container with the following values, and then select **OK**:
+4.  In the Add Container dialog box, create a **new container** with the following values, and then select **OK**:
 
     | Field | Value |
     | --- | --- |
@@ -92,7 +92,7 @@ You'll perform this exercise using the Azure portal.
 
     ![configure container cosmosdb](media/configure-container-cosmosdb.png "configure container cosmosdb")
 
-5.  In the Data Explorer window. Expand contosodb, expand productvolumes, and then click **Items**. The container should currently be empty.
+5.  In the Data Explorer window. Expand **contosodb**, expand **productvolumes**, and then click **Items**. The container should currently be empty.
 
     ![container new item](media/cosmos-container-item.png "container new item")
 
@@ -113,7 +113,7 @@ You'll perform this exercise using the Azure portal.
 
     ```
 
-8.  Select Save. The document will be added to the container. The new document will have some additional fields that Cosmos DB uses to track and manage the document. You can ignore these fields for now.
+8.  Select **Save**. The document will be added to the container. The new document will have some additional fields that Cosmos DB uses to track and manage the document. You can ignore these fields for now.
 
     ![container populated](media/populated-item-container.png "populated item container")
 
@@ -123,11 +123,11 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 ## Step 1 : Create an Azure Storage account for Data Lake Storage
 
-1.  On the left-hand navigation menu in the Azure portal, select Create a resource.
+1.  On the left-hand navigation menu in the Azure portal, select **Create a resource**.
 
     ![create a resource](media/create-a-resource-navigation.png "create a resource")
     
-2.  On the create a resource, select Storage account - blob, file, table, queue.
+2.  On the create a resource, select **Storage account** and then Click on **Create**.
 
     ![storage account select](media/storage-account-select.png "storage account select")
 
@@ -146,29 +146,29 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
    ![storage account](media/str01.png "new sa")
 
-4.  Select Advanced. On the Advanced page, in the Data Lake Storage Gen2 section, select Enabled, and then select Review + create.
+4.  Select **Advanced**. On the Advanced page, in the Data Lake Storage Gen2 section, select Enabled, and then select **Review + create**.
 
      ![new storage account](media/str02.png "new sa")
 
-5.  If your settings are validated correctly, select Create.
+5.  If your settings are validated correctly, select **Create**.
 
     It takes approximately 15-20 seconds for the storage account to be provisioned.
 
 ## Step 2 : Create a container for Data Lake storage
 
-1.  In the Azure portal, on the left-hand navigation menu, select All resources, and then select your storage account.
+1.  In the Azure portal, on the left-hand navigation menu, select **All resources**, and then select **your storage account**.
 
 2.  On the page for your storage account, under Data Lake Storage, select **Containers**.
 
     ![container](media/container-sa.png "container")
 
-3.  On the Containers page, select + Container, and create a new container named **productqualitydata**. Leave the Public access level set to **Private (no anonymous access)**, and then click Create.
+3.  On the Containers page, select **+ Container**, and create a new container named **productqualitydata**. Leave the Public access level set to **Private (no anonymous access)**, and then click Create.
 
     ![container](media/new-container-sa.png "new container")
 
 4.  When the container has been created, double-click the **productqualitydata** container.
 
-5.  On the productqualitydata page, click + Add Directory, and add a directory named **plantA**.
+5.  On the productqualitydata page, click **+ Add Directory**, and add a directory named **plantA**.
 
     ![directory](media/add-directory-sa.png "directory")
 
@@ -179,13 +179,13 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 ## Step 3 : Create a container for Blob storage
 
-1.  In the Azure portal, on the left-hand navigation menu, select All resources, and then select your storage account.
+1.  In the Azure portal, on the left-hand navigation menu, select **All resources**, and then select your storage account.
 
-2.  On the Overview page, select Containers.
+2.  On the Overview page, select **Containers**.
 
     ![container](media/container-sa-homescreen.png "container")
 
-3.  On the Containers page, select + Container, and create a new container named **images**. Set the Public access level to **Blob (anonymous read access for blobs only)**.
+3.  On the Containers page, select **+ Container**, and create a new container named **images**. Set the Public access level to **Blob (anonymous read access for blobs only)**.
 
     ![container](media/images-container-sa.png "new container")
     
