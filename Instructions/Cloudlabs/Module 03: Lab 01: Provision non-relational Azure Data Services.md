@@ -15,10 +15,9 @@ You'll perform this exercise using the Azure portal.
  >Note: Azure can take as little as 5 minutes or as long as 20 minutes to create the Azure Cosmos DB account.
 
 
-### Task 1: Provision and configure a Cosmos DB database and container
-----------------------------------------------------------
+## Task 1: Provision and configure a Cosmos DB database and container
 
-### Step 1 : Create a Cosmos DB account
+## Step 1 : Create a Cosmos DB account
 
 1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the Environment Details tab of the lab guide.
 
@@ -63,7 +62,7 @@ You'll perform this exercise using the Azure portal.
 
     ![validation success](media/validation-success.png "validation success")
     
-### Step 2 : Create a database and a container
+## Step 2 : Create a database and a container
 
 1.  In the Azure portal, in the left-hand navigation menu, select All resources, and then select your Cosmos DB account.
 
@@ -117,10 +116,9 @@ You'll perform this exercise using the Azure portal.
 
 You've now provisioned a new Cosmos DB account, and created a database and container.
 
-### Task 2 : Provision Azure Storage
------------------------
+## Task 2 : Provision Azure Storage
 
-### Step 1 : Create an Azure Storage account for Data Lake Storage
+## Step 1 : Create an Azure Storage account for Data Lake Storage
 
 1.  On the left-hand navigation menu in the Azure portal, select Create a resource.
 
@@ -153,7 +151,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
     It takes approximately 15-20 seconds for the storage account to be provisioned.
 
-### Step 2 : Create a container for Data Lake storage
+## Step 2 : Create a container for Data Lake storage
 
 1.  In the Azure portal, on the left-hand navigation menu, select All resources, and then select your storage account.
 
@@ -176,7 +174,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     Contoso has two manufacturing plants named **Plant A** and **Plant B**. Other applications will upload manufacturing data from each of these plants to the appropriate directory for later analysis.
 
 
-### Step 3 : Create a container for Blob storage
+## Step 3 : Create a container for Blob storage
 
 1.  In the Azure portal, on the left-hand navigation menu, select All resources, and then select your storage account.
 
@@ -194,7 +192,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
  >Note: The container created for Data Lake Storage will also appear in the Containers page. You could store image data in a Data Lake Storage container, but Contoso want to keep the images separate from product quality data.
 
 
-### Step 4 : Create a file share
+## Step 4 : Create a file share
 
 1.  On the storage account page, under File service select **File shares**.
 
