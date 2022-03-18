@@ -35,7 +35,7 @@ You'll perform this exercise using the Azure portal.
     
 4. On the select API Option, select the **Core (SQL)**. 
 
-5.  On the Create Azure Cosmos DB Account page, on the Basics tabs, enter the details of the account using the values in the following table, and then select **Review + create:**
+5.  On the Create Azure Cosmos DB Account page, on the Basics tabs, enter the details of the account using the values in the following table, and then select **Next**.
 
     | Field | Value |
     | --- | --- |
@@ -45,20 +45,23 @@ You'll perform this exercise using the Azure portal.
     | Location | **Accept the default location** |
     | Capacity mode | **Provisioned throughput** |
     | Apply Free Tier Discount | **Do Not Apply** |
-    | Geo-Redundancy | **Disable** |
-    | Multi-region Writes | **Disable** |
-    
+       
 - Note  Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.
 
     ![createcosmosdb](media/create-cosmosdb-1.png "create cosmosdb")
-    
+
+6. enter the details of the account using the values in the following table and then, Selelct **Review + create:**
+   
+    | Field | Value |
+    | --- | --- |
+    | Geo-Redundancy | **Disable** |
+    | Multi-region Writes | **Disable** |   
     
     ![createcosmosdb](media/create-cosmosdb-2.png "create cosmosdb")
 
+7.  Wait while your settings are validated. If there's a problem, it will be reported at this stage, and you can go back and correct the issue.
 
-6.  Wait while your settings are validated. If there's a problem, it will be reported at this stage, and you can go back and correct the issue.
-
-7.  Select Create. It can take 10 or 15 minutes to create the account.
+8.  Select Create. It can take 10 or 15 minutes to create the account.
 
     ![validation success](media/validation-success.png "validation success")
     
