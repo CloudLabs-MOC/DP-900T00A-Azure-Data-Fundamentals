@@ -146,9 +146,11 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
    ![storage account](media/str01.png "new sa")
 
-4.  Select **Advanced**. On the Advanced page, in the Data Lake Storage Gen2 section, select Enabled, and then select **Review + create**.
+4.  Select **Advanced**. On the Advanced page, Cross-check the enabled options which is shown in the below screenshots, and then select **Review + create(3)**.
 
-     ![new storage account](media/str02.png "new sa")
+   ![new storage account](media/image-950.jpg "new sa")
+     
+   ![new storage account](media/image-951.jpg)
 
 5.  If your settings are validated correctly, select **Create**.
 
