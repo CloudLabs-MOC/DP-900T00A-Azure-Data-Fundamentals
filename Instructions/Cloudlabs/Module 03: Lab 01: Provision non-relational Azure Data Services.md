@@ -148,9 +148,9 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 4.  Select **Advanced**. On the Advanced page, Cross-check the enabled options which is shown in the below screenshots, and then select **Review + create(3)**.
 
-   ![new storage account](media/image-950.jpg "new sa")
+    ![new storage account](media/image-950.jpg "new sa")
      
-   ![new storage account](media/image-951.jpg)
+    ![new storage account](media/image-951.jpg)
 
 5.  If your settings are validated correctly, select **Create**.
 
