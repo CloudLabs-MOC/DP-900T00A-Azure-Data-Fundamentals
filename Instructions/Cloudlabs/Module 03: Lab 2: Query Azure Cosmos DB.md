@@ -3,12 +3,11 @@
 In this exercise, you'll see how to use the Data Explorer in the Azure portal to run queries.
 
 
-### Task 1: Query documents with the SQL API using Data Explorer
---------------------------------
+## Task 1: Query documents with the SQL API using Data Explorer
 
-1.  Return to the Azure portal, and go to your Cosmos DB account.
+1.  Return to the Azure portal, and go to your **Cosmos DB account**.
 
-2.  On the Overview page for the account, select Data Explorer. On the Data Explorer page, expand the ProductData database, expand the ProductCatalog container, and then select Items. Verify that the Items pane contains a list of products.
+2.  On the Overview page for the account, select **Data Explorer**. On the Data Explorer page, expand the ProductData database, expand the ProductCatalog container, and then select Items. Verify that the Items pane contains a list of products.
 
     ![](media/lab4/task2/1.png)
 
@@ -16,7 +15,7 @@ In this exercise, you'll see how to use the Data Explorer in the Azure portal to
 
     ![Image of the data for product 316](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-document-316.png)
 
-4.  In the toolbar, select New SQL Query.
+4.  In the toolbar, select **New SQL Query**.
 
     ![Image of the toolbar. The user has selected New SQL Query](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-new-query.png)
 
