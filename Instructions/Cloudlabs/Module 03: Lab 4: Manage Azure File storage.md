@@ -3,12 +3,11 @@
 In this exercise, you'll learn how to create and manage file shares, and upload and download files in Azure File storage.
 
 
-### Task 1: Create a file share
---------------------------------
+# Task 1: Create a file share
 
 Microsoft provides two graphical tools you can use to create and manage file shares in Azure Storage: the Azure portal, and Azure Storage Explorer.
 
-#### Using the Azure portal:
+## Using the Azure portal:
 
 1. In the Azure portal, in the left-hand navigation menu, select Home
 
@@ -48,7 +47,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
     ![](media/lab4/mount-fs.png)   
 
-#### Using Azure Storage Explorer
+## Using Azure Storage Explorer
 
 Azure Storage Explorer is a utility that enables you to manage Azure Storage accounts from your desktop computer.  You can use Storage Explorer to create blob containers and file shares, as well as upload and download files.
 
@@ -96,10 +95,9 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
    ![](media/lab4/task3/10-1.png)
 
-### Task 2: Upload and download files
--------------------------------------
+# Task 2: Upload and download files
 
-#### Using Azure cli
+## Using Azure cli
 
 1.  Return to the azure portal and open the Cloud Shell window, and make sure to select **Bash** and  then enter **cd lab** command to enter into the lab folder
 2.  Switch to the Azure portal and go to the page for your storage account starting with name **storage**.
@@ -145,8 +143,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     dir
     ``` 
     
-#### Using Storage Explorer
-------------------------------------------
+## Using Storage Explorer
 
 1.  Return to Azure Storage Explorer on your desktop computer.
 
