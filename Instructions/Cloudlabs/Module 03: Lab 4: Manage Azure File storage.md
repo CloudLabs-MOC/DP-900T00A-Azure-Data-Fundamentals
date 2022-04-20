@@ -135,13 +135,6 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     azcopy copy 'https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>' 'localfolder' --recursive
 
     ```        
-7. To verify run below command.
-    
-    ```
-    cd localfolder/productdocs/docs
-    
-    dir
-    ``` 
     
 ## Using Storage Explorer
 
