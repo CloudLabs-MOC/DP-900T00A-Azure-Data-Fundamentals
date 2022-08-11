@@ -61,7 +61,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
     ![](media/lab4/sas1.png)
 
-1.  On the Access Keys page, Click on **show** and copy and paste **Storage account name** and **key** to notepad.
+1.  On the Access Keys page, Click on **show** under Key and copy and paste **Storage account name** and **key** to notepad.
 
     ![](media/lab4/ac11.png)
 
