@@ -78,8 +78,23 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
     ![Image of the Results page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-results.png)
     
-    >Note : If you find the import failed with error message, Navigate to your Azure Cosmos DB account, select data explorer and delete the "ProductCatalog" container as shown below. Then perform the steps from 9 to 15 again.
+16. If you find the import failed with error message. Keep a note of the **Failed** json files. Now we will try to perform the import again. 
+
+    ![Image of the Results page in the Data Migration Tool](media/import-012.png)
+
+17. Select **New Import** option at the bottom, and on the pop up asking **"Do you want to reset the import settings?"**, select **No**. 
+
+    ![Image of the Results page in the Data Migration Tool](media/import-011.png)
+
+18. Leave all settings at their default values, and then select **Next** until you are back on the summary page. Select **Import**.
+
+19. Note that the earlier failed files have been successfully imported and the files which were already imported return an error message.
+
+20. Close the Data Migration Tool.
+
+
+    >**Note** : If you find the import failed with error message even after the above steps, Navigate to your Azure Cosmos DB account, select data explorer and delete the "ProductCatalog" container as shown below. Then perform the steps from 9 to 15 again.
 
     ![Image of the Results page in the Data Migration Tool](media/cosmosdbdeletedb.png)
 
-16. Close the Data Migration Tool.
+
