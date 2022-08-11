@@ -26,11 +26,11 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ![server firewall](media/set-server-firewall.png "server firewall")
     
-5.  On the Firewall settings page, select **Add client IP**, and then select **Save**.
+5.  On the **Networking** page, select **Add client IP (1)**, and then select **Save (2)**.
 
     ![server firewall add client ip](media/add-client-ip.png "client IP")
 
-6.  Once the **Success!** Popup appears, Click **Ok**, and Close the Firewall settings page, and return to the Overview page for your database.
+6.  Close the **Networking** settings page, and return to the Overview page for your database.
 
 7.  On the Overview page, select **Query editor (preview)** in the left menu.
 
