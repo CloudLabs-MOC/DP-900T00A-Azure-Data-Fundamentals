@@ -39,7 +39,7 @@ You create a container in an Azure Storage account.
 
     ![](media/lab4/select-storage.png)
 
-3. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images**.
+3. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, click on **images**.
 
     ![](media/lab4/images-select.png)
     
@@ -57,7 +57,7 @@ You create a container in an Azure Storage account.
 
 After you've uploaded files to a container, you can view them in th container folder.
 
-1. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images**.
+1. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, click on **images**.
 
     ![](media/lab4/images-select.png)
     
@@ -67,7 +67,7 @@ After you've uploaded files to a container, you can view them in th container fo
 
 ### Download a blob from a container:
 
-1. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images**.
+1. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, click on **images**.
 
     ![](media/lab4/images-select.png)
     
@@ -83,7 +83,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
 
     ![](media/lab4/soft-delete.png)
 
-2. Now on the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images**.
+2. Now on the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, click on **images**.
 
     ![](media/lab4/images-select.png)
     
