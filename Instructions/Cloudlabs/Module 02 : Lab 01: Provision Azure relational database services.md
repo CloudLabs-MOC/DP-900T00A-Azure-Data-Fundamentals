@@ -84,11 +84,11 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
 2.  Select **Databases**, then select Azure Database for PostgreSQL.
 
-    ![create postgre database](media/create-postgresql-database.png "create postgre database")
+    ![create postgre database](media/upd-create-postgresql-database.png "create postgre database")
 
-3.  On **Select Azure Database for PostgreSQL deployment option** page, Select **Single Server** then click on **Create**.
+3.  On **Select Azure Database for PostgreSQL deployment option** page, Select **Single Server** from the drop-down menu and then click on **Create**.
 
-    ![select postgre service](media/postgresql-service-select.png "select postgre service")
+    ![select postgre service](media/upd-postgresql-service-select.png "select postgre service")
     
 4. On pop-up of **Consider creating flexible server**, Select **No - Create single server**.
 
@@ -99,7 +99,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     | Subscription | **Default Subscription** |
     | Resource group | **DP900-DID** |
     
-6.  Under Server details, use these values
+6.  Under Server details, use these values:
 
     | Setting | Value  |
     | --- | --- |
@@ -108,9 +108,11 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
 
-    ![](media/image-100.jpg)
+    ![](media/upd-image-100.jpg)
 
 7.  Under **Compute + storage**, select **Configure server**.
+
+    ![](media/upd-compute.jpg)
 
 8.  Change **vCore** to **two cores**, increase the **storage** to **160 GB**, set the Backup Retention Period to **14 days**, and then select **OK**.
     
