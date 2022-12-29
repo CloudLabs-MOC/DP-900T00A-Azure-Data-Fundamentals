@@ -45,7 +45,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | **sqlDID** ,Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.|
+    | Server name | **sqlDID**, where **DID** is the DeploymentID can be obtained from the Lab Environment output page.|
     | Authentication method | click on **Use SQL authentication** |
     | Server admin login | **azureadmin** |
     | Password | **Pa55w.rd** |
@@ -90,7 +90,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
     ![select postgre service](media/upd-postgresql-service-select.png "select postgre service")
     
-4. On pop-up of **Consider creating flexible server**, Select **No - Create single server**.
+4. If prompted with pop-up of **Consider creating flexible server**, Select **No - Create single server**.
 
 5.  Use these values to start filling out the form.
 
@@ -103,7 +103,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | Enter **postgresqlDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.|
+    | Server name | Enter **postgresqlDID**, where **DID** is the DeploymentID can be obtained from the Lab Environment output page.|
     | Data source | **None** |
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
@@ -155,7 +155,7 @@ In this exercise you'll set up Azure Database for MySQL
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | Enter **mysqlDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
+    | Server name | Enter **mysqlDID**, where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
     | Data source | **None** |
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
@@ -180,5 +180,5 @@ In this exercise you'll set up Azure Database for MySQL
 
 9.  Select **Review + Create**, and then select **Create** to create your Azure MySQL database.
 
-## Congratulation, You have completed this lab
+## Congratulation, You have completed this lab.
 ------------
