@@ -138,11 +138,11 @@ In this exercise you'll set up Azure Database for MySQL
 
 2.  Select **Databases**, then select **Azure Database for MySQL**.
 
-    ![azure database for sql](media/create-azure-database-forsql.png "azure database for sql")
+    ![azure database for sql](media/upd-create-azure-database-forsql.png "azure database for sql")
 
-3. You will be presented with the choice of a Single server or Flexile server. Select Create for the **Single server option**.
+3. You will be presented with the choice of a Single server or Flexible server. Under resource type, select **Single server option** from the drop-down menu and then click on Create.
 
-    ![azure database for sql](media/dp90002.png "azure database for sql")
+    ![azure database for sql](media/upd-dp90002.png "azure database for sql")
 
 4.  Use these values to fill out the first section of the form.
 
@@ -151,7 +151,7 @@ In this exercise you'll set up Azure Database for MySQL
     | Subscription | **Default Subscription** |
     | Resource group | **DP900-DID** |
 
-5.  Under Server details, use these values
+5.  Under Server details, use these values:
 
     | Setting | Value  |
     | --- | --- |
