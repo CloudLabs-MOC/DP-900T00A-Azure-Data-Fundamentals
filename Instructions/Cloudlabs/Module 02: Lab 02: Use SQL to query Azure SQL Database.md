@@ -46,7 +46,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
 ## Task 2: Run queries against the database
 
-1. Copy the following SQL statement into the editor. Select **Run**, to check everything is working. You should see a list of four inventory items
+1. Copy the following SQL statement into the editor. Select **Run**, to check everything is working. You should see a list of four inventory items:
 
     ```
     SELECT *
@@ -65,7 +65,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ```
 
-    There should be 150 bananas.
+    There should be **150** bananas.
 
     ![db query](media/select-banana.png "db query")
 
