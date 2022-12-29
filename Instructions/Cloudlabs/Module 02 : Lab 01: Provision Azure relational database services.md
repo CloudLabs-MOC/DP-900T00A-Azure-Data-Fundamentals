@@ -108,12 +108,12 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
 
-    ![](media/upd-image-100.jpg)
+    ![](media/upd-image-100.png)
 
 7.  Under **Compute + storage**, select **Configure server**.
 
-    ![](media/upd-compute.jpg)
-
+    ![](media/upd-compute.png)
+ 
 8.  Change **vCore** to **two cores**, increase the **storage** to **160 GB**, set the Backup Retention Period to **14 days**, and then select **OK**.
     
     ![select postgre service](media/postgresql-configure.png "postgre configure")
@@ -125,6 +125,8 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     | Admin username | **azureadmin** |
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
+    
+    ![admin](media/upd-adminacc.png "admin")
 
 10.  Select **Review + Create**, and then select **Create** to create your Azure PostgreSQL database.
 
@@ -173,6 +175,8 @@ In this exercise you'll set up Azure Database for MySQL
     | Admin username | **azureadmin** |
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
+    
+    ![admin](media/upd-adminacc.png "admin")
 
 9.  Select **Review + Create**, and then select **Create** to create your Azure MySQL database.
 
