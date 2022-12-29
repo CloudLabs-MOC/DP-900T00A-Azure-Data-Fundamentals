@@ -140,7 +140,7 @@ In this exercise you'll set up Azure Database for MySQL
 
     ![azure database for sql](media/upd-create-azure-database-forsql.png "azure database for sql")
 
-3. You will be presented with the choice of a Single server or Flexible server. Under resource type, select **Single server option** from the drop-down menu and then click on Create.
+3. You will be presented with the choice of a Single server or Flexible server. Under resource type, select **Single server option** from the drop-down menu and then click on **Create**.
 
     ![azure database for sql](media/upd-dp90002.png "azure database for sql")
 
