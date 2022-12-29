@@ -38,7 +38,7 @@ Over time if you realize you need additional compute power to keep up with deman
     | --- | --- |
     | Subscription | **Default Subscription** |
     | Resource group | **DP900-DID** |
-    | Database name | **ContosoDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
+    | Database name | **ContosoDID**, where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
     | Want to use SQL elastic pool? | **No** |
 
 4.  Under Server, select **Create new**, fill out the Create SQL Database Server form with the following values, and then select **OK**:
