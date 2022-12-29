@@ -30,7 +30,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
 2.  In the portal, select **Create a resource** from the upper left-hand corner. Select **Databases**, then select **SQL Database**.
 
-    ![create sql database](media/create-sql-database.png "create sql database")
+    ![create sql database](media/upd-create-sql-database.png "create sql database")
 
 3.  Enter the following values into the form:
 
