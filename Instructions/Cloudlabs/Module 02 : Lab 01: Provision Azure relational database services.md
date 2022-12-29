@@ -180,5 +180,5 @@ In this exercise you'll set up Azure Database for MySQL
 
 9.  Select **Review + Create**, and then select **Create** to create your Azure MySQL database.
 
-## Congratulation, You have completed this lab.
+## Congratulation, you have completed this lab.
 ------------
