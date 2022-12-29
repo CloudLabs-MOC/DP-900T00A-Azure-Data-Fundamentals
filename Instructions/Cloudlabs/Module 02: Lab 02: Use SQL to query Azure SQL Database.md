@@ -26,7 +26,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ![server firewall](media/set-server-firewall.png "server firewall")
     
-5.  On the **Networking** page, select **Add client IP (1)**, and then select **Save (2)**.
+5.  On the **Networking** page, under Firewall rules select **Add client IP (1)**, and then select **Save (2)**.
 
     ![server firewall add client ip](media/add-client-ip.png "client IP")
 
@@ -101,7 +101,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ```
 
-    This query should return two customers: John Smith and Jane Brown
+    This query should return two customers: **John Smith** and **Jane Brown**.
 
 6.  Find out how many customers have ordered lemons. This query uses the ```COUNT(*)``` function, which returns the number of rows that match the query criteria.
 
@@ -113,7 +113,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ```
 
-    The results of this query should indicate that only one customer has ordered lemons.
+    The results of this query should indicate that only **one** customer has ordered lemons.
 
 7.  Which fruits has John Smith ordered?
 
@@ -125,7 +125,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ```
 
-    The results of this query should show that John Smith has only ordered oranges.
+    The results of this query should show that John Smith has only ordered **oranges**.
 
 8.  What is the total quantity of items ordered by all customers? The **Quantity** column in the **CustomerOrder** table contains the quantity for each order. This query uses the SUM aggregate function to add the quantities together to product a grand total:
 
@@ -134,7 +134,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     FROM CustomerOrder
     ```
 
-    The answer should be 29.
+    The answer should be **29**.
     
     ![db query](media/final-result.png "db query")
     
