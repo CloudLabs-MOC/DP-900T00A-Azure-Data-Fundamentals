@@ -46,7 +46,7 @@ Over time if you realize you need additional compute power to keep up with deman
     | Setting | Value  |
     | --- | --- |
     | Server name | **sqlDID** ,Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.|
-    | Authentication method | click on ** Use SQL authentication** |
+    | Authentication method | click on **Use SQL authentication** |
     | Server admin login | **azureadmin** |
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
