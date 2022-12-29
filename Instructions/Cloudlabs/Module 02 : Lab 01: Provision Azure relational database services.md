@@ -130,7 +130,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
 10.  Select **Review + Create**, and then select **Create** to create your Azure PostgreSQL database.
 
-## Task 3 : Create your Azure Database for MySQL service (Optional)
+## Task 3: Create your Azure Database for MySQL service (Optional)
 
 In this exercise you'll set up Azure Database for MySQL
 
