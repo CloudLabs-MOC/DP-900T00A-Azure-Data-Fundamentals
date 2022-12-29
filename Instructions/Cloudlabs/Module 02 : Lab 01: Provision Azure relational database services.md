@@ -41,23 +41,26 @@ Over time if you realize you need additional compute power to keep up with deman
     | Database name | **ContosoDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
     | Want to use SQL elastic pool? | **No** |
 
-4.  Under Server, select **Create new**, fill out the form with the following values, and then select **OK**:
+4.  Under Server, select **Create new**, fill out the Create SQL Database Server form with the following values, and then select **OK**:
 
     | Setting | Value  |
     | --- | --- |
     | Server name | **sqlDID** ,Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.|
+    | Authentication method | click on ** Use SQL authentication** |
     | Server admin login | **azureadmin** |
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
     | Location | **Select the default location** |
 
-    ![create sql database](media/sql-database-create.png "Creating SQl database")
+    ![create sql database](media/upd-sql-database-create.png "Creating SQl database")
     
-    ![new server](media/sql-new-server-create.png "new server")
+    ![new server](media/upd-sql-new-server-create.png "new server")
 
 5.  Under **Compute + storage**, select **Configure database**.
 
 6.  On the Configure page, leave vCores set to **2**, change Data max size to **50 GB**, and then select **Apply**.
+
+    ![Configure](media/upd-configure.png "Configure")
 
 7.  Back on the Create SQL Database page, select **Additional settings** tab from top header.
 
@@ -69,7 +72,7 @@ Over time if you realize you need additional compute power to keep up with deman
     | Database Collation | **SQL_Latin1_General_CP1_CI_AS** |
     | Maintenance window | **Default** |
 
-    ![new server](media/sql-database-additionalsetting.png "additional")
+    ![new server](media/upd-sql-database-additionalsetting.png "additional")
 
 9.  Select **Review + Create**, and then select **Create** to create your Azure SQL database.  
 
