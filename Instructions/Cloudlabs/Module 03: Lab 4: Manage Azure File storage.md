@@ -29,7 +29,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
     ![](media/lab4/fs-menu.png)
 
-6. The Connect command generates a PowerShell script that you can run to attach to the share from your local computer. You can then use the share as though it was a local disk drive. Click on **Connect** and copy the **PowerShell** script
+6. The Connect command generates a PowerShell script that you can run to attach to the share from your local computer. You can then use the share as though it was a local disk drive. Click on **Connect** and copy the **PowerShell** script.
 
     ![](media/lab4/connect-fs.png)
     
