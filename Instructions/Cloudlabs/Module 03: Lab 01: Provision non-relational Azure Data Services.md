@@ -37,7 +37,7 @@ You'll perform this exercise using the Azure portal.
 
     ![select cosmosdb](media/upd-select-cosmosdb-nosql.png "select cosmosdb")
 
-5.  On the Create Azure Cosmos DB Account page - Azure Cosmos DB for NoSQL page, on the Basics tabs, enter the details of the account using the values in the following table, and then select **Next:Global Distribution**.
+5.  On the Create Azure Cosmos DB Account - Azure Cosmos DB for NoSQL page, on the Basics tabs, enter the details of the account using the values in the following table, and then select **Next:Global Distribution**.
 
     | Field | Value |
     | --- | --- |
@@ -52,7 +52,7 @@ You'll perform this exercise using the Azure portal.
 
     ![createcosmosdb](media/upd-create-cosmosdb-1.png "create cosmosdb")
 
-6. On the Global Distribution page, enter the details of the account using the values in the following table and then, Select **Review + create:**
+6. On the Global Distribution page, enter the details of the account using the values in the following table and then, Select **Review + create.**
    
     | Field | Value |
     | --- | --- |
@@ -129,7 +129,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
     ![create a resource](media/create-a-resource-navigation.png "create a resource")
     
-2.  On the create a resource, select **Storage account** and then Click on **Create**.
+2.  On the create a resource, select **Storage account** and then click on **Create**.
 
     ![storage account select](media/storage-account-select.png "storage account select")
 
@@ -147,7 +147,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
    ![storage account](media/str01.png "new sa")
 
-4.  Select **Next:Advanced**. On the Advanced page, Cross-check the enabled options which is shown in the below screenshots, and then select **Review + create(3)**.
+4.  Select **Next:Advanced**. On the Advanced page, Cross-check the enabled options which is shown in the below screenshot, and then select **Review + create**.
 
     ![new storage account](media/upd-image-950.png "new sa")
 
@@ -169,7 +169,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 4.  When the container has been created, double-click the **productqualitydata** container.
 
-5.  On the productqualitydata page, click **+ Add Directory**, and add a directory named **plantA**.
+5.  On the productqualitydata page, click on **+ Add Directory**, and add a directory named **plantA**.
 
     ![directory](media/add-directory-sa.png "directory")
 
@@ -202,13 +202,13 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
     ![File share](media/upd-fs-sa-select.png "file share")
 
-2.  On the File shares page, select **+ File share**, create a new file share named **reports**. Leave the Quota **empty** and Tier as **Transaction optimized** and click on Create.
+2.  On the File shares page, select **+ File share**, create a new file share named **reports**. Leave the Quota **empty** and Tier as **Transaction optimized** and click on **Create**.
 
     ![File share](media/dp9001.png "file share") 
     
 3.  On the File shares page, double-click the reports file share.
 
-4.  On the reports page, select + Add directory, and add a directory named **manufacturing**.
+4.  On the reports page, select **+ Add directory**, and add a directory named **manufacturing**.
 
     ![File share](media/fs-add-directory.png "file share")
 
