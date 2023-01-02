@@ -13,7 +13,7 @@ In this exercise, you'll see how to use the Data Explorer in the Azure portal to
 
 3.  Select the item with ID 316. A JSON document containing the details for product 316 should appear in the right-hand pane.
 
-    ![Image of the data for product 316](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-document-316.png)
+    ![Image of the data for product 316](media/lab4/upd-l2-t1-s2.png)
 
 4.  In the toolbar, select **New SQL Query**.
 
