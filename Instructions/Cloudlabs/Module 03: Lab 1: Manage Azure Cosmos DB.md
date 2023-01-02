@@ -41,9 +41,9 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
     ![Image of the Welcome page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-welcome.png)
 
-9. On the Source Information page, in the Import from drop-down list box, select JSON file(s) and then select **Add Files**.
+9. On the Source Information page, in the Import from drop-down list box, select **JSON file(s)** and then select **Add Files**.
 
-    ![Image of the Source Information page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-source.png)
+    ![Image of the Source Information page in the Data Migration Tool](media/lab4/upd-6-source.png)
 
 10. In the Open dialog box, browse to the folder on the desktop where you cloned the repository containing the sample data for the exercise, move to the lab folder, move to the products folder, and select the **productinfo.json file**. Select **Open**.
 
@@ -92,7 +92,7 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
 20. Close the Data Migration Tool.
 
-     >**Note** : If you find the import failed with error message even after the above steps, Navigate to your Azure Cosmos DB account, select data explorer and delete the "ProductCatalog" container as shown below. Then perform the steps from 9 to 17 again.
+      >**Note** : If you find the import failed with error message even after the above steps, Navigate to your Azure Cosmos DB account, select data explorer and delete the "ProductCatalog" container as shown below. Then perform the steps from 9 to 17 again.
 
     ![Image of the Results page in the Data Migration Tool](media/cosmosdbdeletedb.png)
 
