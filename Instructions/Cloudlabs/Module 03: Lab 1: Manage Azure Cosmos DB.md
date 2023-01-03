@@ -91,8 +91,8 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 19. Note that the earlier failed files have been successfully imported and the files which were already imported return an error message.
 
 20. Close the Data Migration Tool.
-
-      >**Note** : If you find the import failed with error message even after the above steps, navigate to your Azure Cosmos DB account, select Data explorer and delete the "ProductCatalog" container as shown below (for container ID, enter ProductCatalog). Then perform the steps from 9 to 17 agai.
+ 
+    >**Note** : If you find the import failed with error message even after the above steps, navigate to your Azure Cosmos DB account, select Data explorer and delete the "ProductCatalog" container as shown below (for container ID, enter ProductCatalog). Then perform the steps from 9 to 17 again.
 
     ![Image of the Results page in the Data Migration Tool](media/cosmosdbdeletedb.png)
 
