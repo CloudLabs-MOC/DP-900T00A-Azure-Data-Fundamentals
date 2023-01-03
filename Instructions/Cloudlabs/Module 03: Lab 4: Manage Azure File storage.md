@@ -69,7 +69,7 @@ Azure Storage Explorer is an utility that enables you to manage Azure Storage ac
 
     ![](media/lab4/task3/4-1.png)
 
-1.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select **Azure Storage**. In the popup window select **Storage account or service**
+1.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select **Azure Storage**. In the popup window select **Storage account or service**.
 
     ![Image showing the Azure Storage Explorer. The user has selected Storage Accounts](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-local-attached.png)
     
