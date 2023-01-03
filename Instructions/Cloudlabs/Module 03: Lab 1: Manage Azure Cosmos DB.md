@@ -82,7 +82,7 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
     ![Image of the Results page in the Data Migration Tool](media/import-012.png)
 
-17. Select **New Import** option at the bottom, and on the pop up asking **"Do you want to reset the import settings?"**, select **No**. 
+17. Select **New Import** option at the bottom, and on the pop up asking **"Do you want to reset the import settings?"**, select **No**.
 
     ![Image of the Results page in the Data Migration Tool](media/import-011.png)
 
@@ -92,8 +92,8 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
 20. Close the Data Migration Tool.
 
-      >**Note** : If you find the import failed with error message even after the above steps, navigate to your Azure Cosmos DB account, select Data explorer and delete the "ProductCatalog" container as shown below (for container ID, enter ProductCatalog). Then perform the steps from 9 to 17 again.
+      >**Note** : If you find the import failed with error message even after the above steps, navigate to your Azure Cosmos DB account, select Data explorer and delete the "ProductCatalog" container as shown below (for container ID, enter ProductCatalog). Then perform the steps from 9 to 17 agai.
 
-  ![Image of the Results page in the Data Migration Tool](media/cosmosdbdeletedb.png)
+    ![Image of the Results page in the Data Migration Tool](media/cosmosdbdeletedb.png)
 
 
