@@ -21,7 +21,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
     ![](media/lab4/create-fs.png)
     
-4. On the New file share window give **Name** as **reports** then click on **create**.
+4. On the New file share window give **Name** as **reports** then click on **Create**.
 
     ![](media/lab4/create-fs2.png)
     
@@ -37,7 +37,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
     
 7. Now in LabVM go to start menu and type **Powershell ISE** in search bar, then open it.
 
-8. Go to **View** and click on **show script** pane to open editor panel, then paste the connection string you copied and click on **execute button**.
+8. Go to **View** and click on **Show script pane** to open editor panel, then paste the connection string you copied and click on **Execute button**.
 
     ![](media/lab4/sh-pane.png) 
     ![](media/lab4/ise-1.png) 
