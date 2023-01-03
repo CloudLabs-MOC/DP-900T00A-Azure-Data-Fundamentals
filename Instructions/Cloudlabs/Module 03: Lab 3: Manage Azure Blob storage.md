@@ -23,7 +23,7 @@ You create a container in an Azure Storage account.
 
     ![](media/lab4/create-container.png)
 
-4. On the new container create page, provide name as **images** and select **blob** in **Public access level** dropdown. Click on **create**.
+4. On the new container create page, provide name as **images** and select **blob** in **Public access level** dropdown. Click on **Create**.
 
     ![](media/lab4/images.png)
 
@@ -117,7 +117,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
    
    ![](media/lab4/task3/cloudshell2.png)
 
-3. You have to create a storage account to run the bash commands and Select Use existing under Resource Group then select DP900-deploymentID and enter **cloudshellDID** for storage account name and enter **fileshareDID** for file share and then click on **Create Storage**.
+3. You have to create a storage account to run the bash commands and select **Use existing** under Resource Group then select **DP900-deploymentID** and enter **cloudshellDID** for storage account name and enter **fileshareDID** for file share and then click on **Create storage**.
 
    ![](media/lab4/upd-cloudshell3.png)
 
@@ -134,7 +134,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
 
 #### Upload a blob to Azure Storage:
 
-1. After you've created a container, you can upload blobs by running the following commands. In the third command Replace storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps and then run the command and after the command is run you will see similar outputs as shown in image :
+1. After you've created a container, you can upload blobs by running the following commands. In the third command replace storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps and then run the command and after the command is run you will see similar outputs as shown in image :
 
      ```
         git clone https://github.com/MicrosoftDocs/mslearn-explore-non-relational-data-stores-azure.git lab
