@@ -20,7 +20,7 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
     ![](media/lab4/3.png)
 
 
-6.  Open up a **Command prompt** by clicking the **Start button**, typing Command Prompt, right clicking Command prompt, and selecting **Run as administrator** in the right-click menu. navigate to desktop using the cd command, and run the second command to create another copy of the code and data required for the exercise.
+6.  Open up a **Command prompt** by clicking the **Start button**, typing Command Prompt, right clicking Command prompt, and selecting **Run as administrator** in the right-click menu. Navigate to desktop using the cd command, and then run the second command to create another copy of the code and data required for the exercise.
 
       >**Note**: You need a copy of the data on your computer because you'll run the tools to upload this data from your desktop.
 
@@ -33,7 +33,7 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
     ![](media/lab4/4.png)
     
-7.  On the desktop, Double-click the file **dtui.exe**. This application is the Data Migration Tool.
+7.  On the desktop, double-click the file **dtui.exe**. This application is the Data Migration Tool.
 
     ![](media/lab4/5.png)
 
@@ -41,16 +41,16 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
     ![Image of the Welcome page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-welcome.png)
 
-9. On the Source Information page, in the Import from drop-down list box, select JSON file(s). and then select **Add Files**.
+9. On the Source Information page, in the Import from drop-down list box, select **JSON file(s)** and then select **Add Files**.
 
-    ![Image of the Source Information page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-source.png)
+    ![Image of the Source Information page in the Data Migration Tool](media/lab4/upd-6-source.png)
 
-10. In the Open dialog box, browse to the folder on the desktop where you cloned the repository containing the sample data for the exercise, move to the lab folder, move to the products folder, and select the productinfo.json file. Select Open.
+10. In the Open dialog box, browse to the folder on the desktop where you cloned the repository containing the sample data for the exercise, move to the lab folder, move to the products folder, and select the **productinfo.json file**. Select **Open**.
 
-    >Note: The productinfo.json file contains the product information in JSON format. If you have time, you can examine the contents of this file using Notepad.
+    >**Note:** The productinfo.json file contains the product information in JSON format. If you have time, you can examine the contents of this file using Notepad.
    
     ![](media/lab4/6.png)
-11. Back on the Source Information page, select **Next**
+11. Back on the Source Information page, select **Next**.
 
 12. On the Target Information page, enter the following settings, and then select **Next**.
 
@@ -82,7 +82,7 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
     ![Image of the Results page in the Data Migration Tool](media/import-012.png)
 
-17. Select **New Import** option at the bottom, and on the pop up asking **"Do you want to reset the import settings?"**, select **No**. 
+17. Select **New Import** option at the bottom, and on the pop up asking **"Do you want to reset the import settings?"**, select **No**.
 
     ![Image of the Results page in the Data Migration Tool](media/import-011.png)
 
@@ -91,9 +91,8 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 19. Note that the earlier failed files have been successfully imported and the files which were already imported return an error message.
 
 20. Close the Data Migration Tool.
-
-
-    >**Note** : If you find the import failed with error message even after the above steps, Navigate to your Azure Cosmos DB account, select data explorer and delete the "ProductCatalog" container as shown below. Then perform the steps from 9 to 17 again.
+ 
+    >**Note** : If you find the import failed with error message even after the above steps, navigate to your Azure Cosmos DB account, select Data explorer and delete the "ProductCatalog" container as shown below (for container ID, enter ProductCatalog). Then perform the steps from 9 to 17 again.
 
     ![Image of the Results page in the Data Migration Tool](media/cosmosdbdeletedb.png)
 

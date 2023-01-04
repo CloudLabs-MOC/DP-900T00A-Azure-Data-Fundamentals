@@ -9,7 +9,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
 ## Using the Azure portal:
 
-1. In the Azure portal, in the left-hand navigation menu, select Home
+1. In the Azure portal, in the left-hand navigation menu, select **Home**.
 
     ![](media/lab4/task3/1.png)
 
@@ -21,15 +21,15 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
     ![](media/lab4/create-fs.png)
     
-4. On the New file share window give **Name** as **reports** then click on **create**.
+4. On the New file share window give **Name** as **reports** then click on **Create**.
 
     ![](media/lab4/create-fs2.png)
     
-5. After you've created a share, Click on **reports**. you can use the Azure portal to add directories to the share, upload files to the share, and delete the share. 
+5. After you've created a share, click on **reports**. You can use the Azure portal to add directories to the share, upload files to the share, and delete the share. 
 
     ![](media/lab4/fs-menu.png)
 
-6. The Connect command generates a PowerShell script that you can run to attach to the share from your local computer. You can then use the share as though it was a local disk drive. Click on **Connect** and copy the **PowerShell** script
+6. The Connect command generates a PowerShell script that you can run to attach to the share from your local computer. You can then use the share as though it was a local disk drive. Click on **Connect** and copy the **PowerShell** script.
 
     ![](media/lab4/connect-fs.png)
     
@@ -37,7 +37,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
     
 7. Now in LabVM go to start menu and type **Powershell ISE** in search bar, then open it.
 
-8. Go to View and click on show script pane to open editor panel. then paste the connection string you copied and click on execute button.
+8. Go to **View** and click on **Show script pane** to open editor panel, then paste the connection string you copied and click on **Execute button**.
 
     ![](media/lab4/sh-pane.png) 
     ![](media/lab4/ise-1.png) 
@@ -49,9 +49,9 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
 ## Using Azure Storage Explorer
 
-Azure Storage Explorer is a utility that enables you to manage Azure Storage accounts from your desktop computer.  You can use Storage Explorer to create blob containers and file shares, as well as upload and download files.
+Azure Storage Explorer is an utility that enables you to manage Azure Storage accounts from your desktop computer. You can use Storage Explorer to create blob containers and file shares, as well as upload and download files.
 
-1.  In the Azure portal, in the left-hand navigation menu, select Home
+1.  In the Azure portal, in the left-hand navigation menu, select **Home**.
 
     ![](media/lab4/task3/1.png)
 
@@ -61,21 +61,21 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
     ![](media/lab4/sas1.png)
 
-1.  On the Access Keys page, Click on **show** under Key and copy and paste **Storage account name** and **key** to notepad.
+1.  On the Access Keys page, click on **show** under key and copy and paste **Storage account name** and **Key** to notepad.
 
     ![](media/lab4/ac11.png)
 
-1.  Return to your desktop computer, and start Azure Storage Explorer.
+1.  Return to your desktop computer, and start **Azure Storage Explorer**.
 
     ![](media/lab4/task3/4-1.png)
 
-1.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select **Azure Storage**, In the popup window select **Storage account or service**
+1.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select **Azure Storage**. In the popup window select **Storage account or service**.
 
     ![Image showing the Azure Storage Explorer. The user has selected Storage Accounts](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-local-attached.png)
     
     ![](media/lab4/se2.png)
 
-1.  In the Connect to Azure Storage dialog box, select **Account name and key**, and then select Next.
+1.  In the Connect to Azure Storage dialog box, select **Account name and key**, and then select **Next**.
 
     ![](media/lab4/se4-1.png)
 
@@ -83,15 +83,15 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
     ![](media/lab4/se5.png)
 
-1.  On the Connection Summary page, select Connect.
+1.  On the Connection Summary page, select **Connect**.
 
      ![](media/lab4/se6.png)
 
-1. In Azure Storage Explorer, under Storage Accounts, expand Storageaccount which you have used in the above steps. Verify that folders appear for Blob Containers and File Shares.
+1. In Azure Storage Explorer, under Storage Accounts, expand **Storageaccount** which you have used in the above steps. Verify that folders appear for **Blob Containers and File Shares**.
 
    ![](media/lab4/task3/8new.png)
 
-1. Right-click File Shares, and then select Create File Share. Add a file share named **documents**.
+1. Right-click File Shares, and then select **Create File Share**. Add a file share named **documents**.
 
    ![](media/lab4/task3/10-1.png)
 
@@ -99,10 +99,10 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
 ## Using Azure cli
 
-1.  Return to the azure portal and open the Cloud Shell window, and make sure to select **Bash** and  then enter **cd lab** command to enter into the lab folder
+1.  Return to the azure portal and open the Cloud Shell window, and make sure to select **Bash** and then enter **cd lab** command to enter into the lab folder.
 2.  Switch to the Azure portal and go to the page for your storage account starting with name **storage**.
 
-3.  Under **Security + networking**, select **Shared access signature**, and create another SAS token, this time for your Cloud Shell. Specify the following settings, and then click Generate SAS and connection string:
+3.  Under **Security + networking**, select **Shared access signature**, and create another SAS token, this time for your Cloud Shell. Specify the following settings, and then click on **Generate SAS and connection string**:
 
     TABLE 2
     | Setting | Value |
@@ -115,7 +115,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
    ![](media/lab4/task3/10.png)
    
-4. Make a note of the **SAS token** that is generated.
+4. Make a note of the **SAS token** that is generated in a notepad.
 
    ![](media/lab4/task3/11.png)
 
@@ -129,7 +129,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     ![](media/lab4/task3/12.png)
     This command uploads all the files in the *docs* folder to a folder named *productdocs* in the *documents* file share. It should upload seven items; one folder and six files.
 
-6. To Download files from Azure file share run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
+6. To download files from Azure file share run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
 
     ```
     azcopy copy 'https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>' 'localfolder' --recursive
@@ -144,9 +144,9 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     
     ![](media/lab4/upload-se.png)    
     
-3.  Close the documents pane, and the select the documents file share to open it again. The productdocs folder should be listed in the right-hand pane.
+3.  Close the documents pane, and the select the documents file share to open it again. The **productdocs** folder should be listed in the right-hand pane.
     
-4.  Double-click the productdocs folder, and then double-click the docs sub-folder. This sub-folder contains six documents:
+4.  Double-click the productdocs folder, and then double-click the docs sub-folder. This sub-folder contains **six** documents:
 
     ![](media/lab4/task3/13.png)
 

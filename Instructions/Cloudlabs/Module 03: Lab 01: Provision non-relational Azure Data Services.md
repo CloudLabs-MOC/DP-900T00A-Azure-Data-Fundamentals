@@ -12,7 +12,7 @@ In this exercise, you'll provision and configure the Cosmos DB account, and test
 You'll perform this exercise using the Azure portal.
 
 
- >Note: Azure can take as little as 5 minutes or as long as 20 minutes to create the Azure Cosmos DB account.
+ >**Note**: Azure can take as little as 5 minutes or as long as 20 minutes to create the Azure Cosmos DB account.
 
 
 ## Task 1: Provision and configure a Cosmos DB database and container
@@ -31,11 +31,13 @@ You'll perform this exercise using the Azure portal.
 
 3.  On the create a resource page, select **Azure Cosmos DB**.
 
-    ![select cosmosdb](media/select-cosmosdb.png "select cosmosdb")
+    ![select cosmosdb](media/upd-select-cosmosdb.png "select cosmosdb")
     
-4. On the select API Option, select the **Core (SQL)**. 
+4.  On the Create an Azure Cosmos DB Account page, click on **Create** under Azure Cosmos DB for NoSQL. 
 
-5.  On the Create Azure Cosmos DB Account page, on the Basics tabs, enter the details of the account using the values in the following table, and then select **Next**.
+    ![select cosmosdb](media/upd-select-cosmosdb-nosql.png "select cosmosdb")
+
+5.  On the Create Azure Cosmos DB Account - Azure Cosmos DB for NoSQL page, on the Basics tabs, enter the details of the account using the values in the following table, and then select **Next:Global Distribution**.
 
     | Field | Value |
     | --- | --- |
@@ -46,11 +48,11 @@ You'll perform this exercise using the Azure portal.
     | Capacity mode | **Provisioned throughput** |
     | Apply Free Tier Discount | **Do Not Apply** |
        
-- Note  Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.
+- **Note:**  Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.
 
-    ![createcosmosdb](media/create-cosmosdb-1.png "create cosmosdb")
+    ![createcosmosdb](media/upd-create-cosmosdb-1.png "create cosmosdb")
 
-6. Enter the details of the account using the values in the following table and then, Selelct **Review + create:**
+6. On the Global Distribution page, enter the details of the account using the values in the following table and then, Select **Review + create.**
    
     | Field | Value |
     | --- | --- |
@@ -63,7 +65,7 @@ You'll perform this exercise using the Azure portal.
 
 8.  Select **Create**. It can take 5 or 10 minutes to create the account.
 
-    ![validation success](media/validation-success.png "validation success")
+    ![validation success](media/upd-validation-success.png "validation success")
     
 ## Step 2 : Create a database and a container
 
@@ -79,20 +81,20 @@ You'll perform this exercise using the Azure portal.
 
     ![new container](media/select-new-container-cosmosdb.png " new Container")
 
-4.  In the Add Container dialog box, create a **new container** with the following values, and then select **OK**:
+4.  In the New Container dialog box, create a **new container** with the following values, and then select **OK**:
 
     | Field | Value |
     | --- | --- |
     | Database ID | Select Create new, and enter **contosodb** |
-    | Share database throughput | **Check** |
+    | Share throughput across containers | **Check** |
     | Throughput | Select **Manual**, and specify **400** RU/s (the default) |
     | Container ID | **productvolumes** |
     | Partition key | **/productid** (Each product will have a new level recorded each day. Partitioning by product ID enables you to quickly report how the levels for a product vary over time.) |
-    | My partition key is larger than 100 bytes | **Leave unchecked** |
+    | My partition key is larger than 101 bytes | **Leave unchecked** |
 
-    ![configure container cosmosdb](media/configure-container-cosmosdb.png "configure container cosmosdb")
+    ![configure container cosmosdb](media/upd-configure-container-cosmosdb.png "configure container cosmosdb")
 
-5.  In the Data Explorer window. Expand **contosodb**, expand **productvolumes**, and then click **Items**. The container should currently be empty.
+5.  In the Data Explorer window. Expand **contosodb**, expand **productvolumes**, and then click on **Items**. The container should currently be empty.
 
     ![container new item](media/cosmos-container-item.png "container new item")
 
@@ -127,7 +129,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
     ![create a resource](media/create-a-resource-navigation.png "create a resource")
     
-2.  On the create a resource, select **Storage account** and then Click on **Create**.
+2.  On the create a resource, select **Storage account** and then click on **Create**.
 
     ![storage account select](media/storage-account-select.png "storage account select")
 
@@ -140,17 +142,14 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     | Storage account Name | **datastorageDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
     | Performance | **Standard** |
     | Replication | **Geo-Zone-redundant storage (GZRS)** |
-    | Access tier | **Hot** |
     
-  >Note  Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.
+  >**Note:** Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.
 
    ![storage account](media/str01.png "new sa")
 
-4.  Select **Advanced**. On the Advanced page, Cross-check the enabled options which is shown in the below screenshots, and then select **Review + create(3)**.
+4.  Select **Next:Advanced**. On the Advanced page, Cross-check the enabled options which is shown in the below screenshot, and then select **Review + create**.
 
-    ![new storage account](media/image-950.jpg "new sa")
-     
-    ![new storage account](media/image-951.jpg)
+    ![new storage account](media/upd-image-950.png "new sa")
 
 5.  If your settings are validated correctly, select **Create**.
 
@@ -160,17 +159,17 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 1.  In the Azure portal, on the left-hand navigation menu, select **All resources**, and then select **your storage account**.
 
-2.  On the page for your storage account, under Data Lake Storage, select **Containers**.
+2.  On the page for your storage account, under Data Storage, select **Containers**.
 
-    ![container](media/container-sa.png "container")
+    ![container](media/upd-container-sa.png "container")
 
-3.  On the Containers page, select **+ Container**, and create a new container named **productqualitydata**. Leave the Public access level set to **Private (no anonymous access)**, and then click Create.
+3.  On the Containers page, select **+ Container**, and create a new container named **productqualitydata**. Leave the Public access level set to **Private (no anonymous access)**, and then click on **Create**.
 
     ![container](media/new-container-sa.png "new container")
 
 4.  When the container has been created, double-click the **productqualitydata** container.
 
-5.  On the productqualitydata page, click **+ Add Directory**, and add a directory named **plantA**.
+5.  On the productqualitydata page, click on **+ Add Directory**, and add a directory named **plantA**.
 
     ![directory](media/add-directory-sa.png "directory")
 
@@ -183,33 +182,33 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 1.  In the Azure portal, on the left-hand navigation menu, select **All resources**, and then select your storage account.
 
-2.  On the Overview page, select **Containers**.
+2.  On the page for your storage account, under Data Storage, select **Containers**.
 
-    ![container](media/container-sa-homescreen.png "container")
+    ![container](media/upd-container-sa.png "container")
 
-3.  On the Containers page, select **+ Container**, and create a new container named **images**. Set the Public access level to **Blob (anonymous read access for blobs only)**.
+3.  On the Containers page, select **+ Container**, and create a new container named **images**. Set the Public access level to **Blob (anonymous read access for blobs only)** and then click on **Create**.
 
     ![container](media/images-container-sa.png "new container")
     
     Contoso will use this container to hold product images.
 
 
- >Note: The container created for Data Lake Storage will also appear in the Containers page. You could store image data in a Data Lake Storage container, but Contoso want to keep the images separate from product quality data.
+ >**Note:** The container created for Data Lake Storage will also appear in the Containers page. You could store image data in a Data Lake Storage container, but Contoso want to keep the images separate from product quality data.
 
 
 ## Step 4 : Create a file share
 
-1.  On the storage account page, under File service select **File shares**.
+1.  On the storage account page, from the left hand panel select **File shares** under Data storage.
 
-    ![File share](media/fs-sa-select.png "file share")
+    ![File share](media/upd-fs-sa-select.png "file share")
 
-2.  On the File shares page, select + File share, create a new file share named **reports**. Leave the Quota **empty** and Tier as **Transaction optimized** and click on Create.
+2.  On the File shares page, select **+ File share**, create a new file share named **reports**. Leave the Quota **empty** and Tier as **Transaction optimized** and click on **Create**.
 
     ![File share](media/dp9001.png "file share") 
     
 3.  On the File shares page, double-click the reports file share.
 
-4.  On the reports page, select + Add directory, and add a directory named **manufacturing**.
+4.  On the reports page, select **+ Add directory**, and add a directory named **manufacturing**.
 
     ![File share](media/fs-add-directory.png "file share")
 
