@@ -157,8 +157,8 @@ In this exercise you'll set up Azure Database for MySQL
     | Setting | Value  |
     | --- | --- |
     | Server name | Enter **mysqlDID**, where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
-    | Location | **Select the default location** |
-    | Version | **Keep default setting** |
+    | Region | **Select the default location** |
+    | MySQL version | **Keep default setting** |
     
     
     ![azure database for sql](media/upd-t3-s5.png "azure database for sql")
@@ -167,7 +167,7 @@ In this exercise you'll set up Azure Database for MySQL
 
     ![mysql create](media/upd-t3-s6.png "mysql create")
 
-7.  On the Pricing tier page, select **Compute tier** as **General Purpose (2-64 vCores)**, reduce **Storage size** to **64 GB**, reduce **IOPS** to **492**, change Backup Retention Period to **14 days**, and then select **Save**.
+7.  On the Compute + storage page, select **Compute tier** as **General Purpose (2-64 vCores)**, reduce **Storage size** to **64 GB**, reduce **IOPS** to **492**, change Backup Retention Period to **14 days**, and then select **Save**.
 
     ![configure azure database](media/upd-t3-s7.png "configure azure database") 
 
