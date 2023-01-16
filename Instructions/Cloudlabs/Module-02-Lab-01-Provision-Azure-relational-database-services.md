@@ -82,7 +82,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
 1.  On the Azure portal, select **Create a resource** from the upper left-hand corner.
 
-2.  Select **Databases**, then select Azure Database for PostgreSQL.
+2.  Select **Databases**, then select **Azure Database for PostgreSQL**.
 
     ![create postgre database](media/upd-create-postgresql-database.png "create postgre database")
 
@@ -126,6 +126,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
     
+    
     ![admin](media/upd-adminacc.png "admin")
 
 10.  Select **Review + Create**, and then select **Create** to create your Azure PostgreSQL database.
@@ -140,9 +141,9 @@ In this exercise you'll set up Azure Database for MySQL
 
     ![azure database for sql](media/upd-create-azure-database-forsql.png "azure database for sql")
 
-3. You will be presented with the choice of a Single server or Flexible server. Under resource type, select **Single server option** from the drop-down menu and then click on **Create**.
+3. On **Select Azure Database for MySQL deployment option** page, click on **Create** under **Flexible Server**.
 
-    ![azure database for sql](media/upd-dp90002.png "azure database for sql")
+    ![azure database for sql](media/upd-t3-s3.png "azure database for sql")
 
 4.  Use these values to fill out the first section of the form.
 
@@ -156,19 +157,21 @@ In this exercise you'll set up Azure Database for MySQL
     | Setting | Value  |
     | --- | --- |
     | Server name | Enter **mysqlDID**, where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
-    | Data source | **None** |
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
+    
+    
+    ![azure database for sql](media/upd-t3-s5.png "azure database for sql")
 
-6.  Under **Compute + storage**, select **configure server**.
+6.  Under **Compute + storage**, select **Configure server**.
 
-    ![mysql create](media/mysql-create.png "mysql create")
+    ![mysql create](media/upd-t3-s6.png "mysql create")
 
-7.  On the Pricing tier page, reduce **vCore** to **two cores**, set **Storage** between **160 GB** to **170 GB**, change Backup Retention Period to **14 days**, and then select **apply**.
+7.  On the Pricing tier page, select **Compute tier** as **General Purpose (2-64 vCores)**, reduce **Storage size** to **64 GB**, reduce **IOPS** to **492**, change Backup Retention Period to **14 days**, and then select **Save**.
 
-    ![configure azure database](media/configure-azure-database-mysql.png "configure azure database") 
+    ![configure azure database](media/upd-t3-s7.png "configure azure database") 
 
-8.  Back on the Create MySQL server page, under Administrator account, use these values
+8.  Back on the Flexible server page, under Authentication, use these values:
 
     | Setting | Value  |
     | --- | --- |
@@ -176,9 +179,12 @@ In this exercise you'll set up Azure Database for MySQL
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
     
-    ![admin](media/upd-adminacc.png "admin")
+    
+    ![admin](media/upd-t3-s8.png "admin")
 
 9.  Select **Review + Create**, and then select **Create** to create your Azure MySQL database.
+
+    > **Note:** If prompted with **Configure IP address in firewall rules** pop-up, click on **Create server without firewall rules**.
 
 ## Congratulation, you have completed this lab.
 ------------
