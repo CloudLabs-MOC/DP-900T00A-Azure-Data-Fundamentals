@@ -121,7 +121,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
 
    ![](media/lab4/upd-cloudshell3.png)
 
-4. Run the following commands by replacing storage account name(including the <>) and Resource-group(including the <>) with the name of the storage account name and resource group name you copied into notepad in the earlier steps and then run the command and after the command is run you will see similar outputs as shown in image :
+4. Run the following commands by replacing storage account name **storagexxxxx**(including the <>) and Resource-group(including the <>) with the name of the storage account name and resource group name you copied into notepad in the earlier steps and then run the command and after the command is run you will see similar outputs as shown in image :
 
      ```
         az storage container create \
