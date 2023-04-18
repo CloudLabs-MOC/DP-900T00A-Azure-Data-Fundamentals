@@ -30,7 +30,7 @@ You'll need an [Azure subscription](https://azure.microsoft.com/free) in which y
     - **Want to use SQL elastic pool?**: *No*
     - **Workload environment**: Development
     - **Compute + storage**: Leave unchanged
-    - **Backup storage redundancy**: *Locally-redundant backup storage*
+    - **Backup storage redundancy**: *Locally-redundant backup storage
 
 1. On the **Create SQL Database** page, select **Next :Networking >**, and on the **Networking** page, in the **Network connectivity** section, select **Public endpoint**. Then select **Yes** for both options in the **Firewall rules** section to allow access to your database server from Azure services and your current client IP address.
 
