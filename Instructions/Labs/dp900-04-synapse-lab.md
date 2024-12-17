@@ -50,11 +50,12 @@ The exercise is designed to familiarize you with some key elements of a modern d
     
     ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/synapse-studio-dp900-lab4.png)
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+
+   <validation step="f63ac60a-1265-47c2-8043-4b696ac5ffbf" />
 
 ### Task 2 : Ingest data
 
@@ -264,8 +265,6 @@ While SQL is a common language for querying structured datasets, many data analy
     display(df.limit(10))
     
     ```
-
-    
 1.  Use the  **▷**  icon to the left of the code cell to run it, and wait for the results. The first time you run a cell in a notebook, the Spark pool is started - so it may take a minute or so to return any results.
     
     > **Note**: 
@@ -315,11 +314,12 @@ While SQL is a common language for querying structured datasets, many data analy
     
 1.  Close the  **Notebook 1**  pane and discard your changes.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-     > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+     >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+
+   <validation step="659a2fac-2657-4dee-bf66-e9eb3ddba059" />
 
 ## Review
 In this lab, you have completed:
