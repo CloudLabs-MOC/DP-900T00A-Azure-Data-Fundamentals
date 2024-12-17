@@ -105,7 +105,7 @@ Now that you have ingested data into a table in the lakehouse, you can use SQL t
 
 1. At the top right of the Lakehouse page, switch to the **SQL analytics endpoint** for your lakehouse.
 
-    ![Screenshot of the SQL endpoint menu.](./images/DP-900-sql.png)
+    ![Screenshot of the SQL analytics endpoint menu.](./images/DP-900-sql.png)
 
 1. In the toolbar, select **New SQL query**. Then enter the following SQL code into the query editor:
 
@@ -121,7 +121,7 @@ Now that you have ingested data into a table in the lakehouse, you can use SQL t
 
 ## Task 5: Visualize data in a lakehouse
 
-Microsoft Fabric lakehouses organize all tables in a data model, which you can use to create visualizations and reports.
+Microsoft Fabric lakehouses organize all tables in a semantic data model, which you can use to create visualizations and reports.
 
 1. At the bottom left of the page, under the **Explorer** pane, select the **Model** tab to see the data model for the tables in the lakehouse (in this case there is only one table).
 
