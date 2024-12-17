@@ -1,7 +1,7 @@
 # Module 04b: Explore data analytics in Microsoft Fabric
 
 ## Lab scenario
-In this lab you'll explore data ingestion and analytics in a Microsoft Fabric Lakehouse.
+In this lab, you'll explore data ingestion and analytics in a Microsoft Fabric Lakehouse.
 
 ## Lab Objectives
 
@@ -23,9 +23,9 @@ In this lab, you will perform:
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. On  **Microsoft Fabric** home page, select **Power BI**.
+1. In the menu bar, at the bottom left, switch to the **Data Engineering** experience.
 
-    ![](images//msfabric.png)
+     ![Screenshot of the experience switcher menu.](./images/DP-900-dataengineering.png)
 
 1. In the menu bar on the left, select Workspaces (the icon looks similar to 🗇). Select +New Workspace.
    
@@ -35,17 +35,13 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![](images//workspace.png)
 
-## Task 2: Create a lakehouse
+   >**Note:** The first time you use any Microsoft Fabric features, prompts with tips may appear. Dismiss these.
 
-Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for your data files.
+## ## Create a lakehouse
 
-1. At the bottom left of the portal, select **PowerBI**, and switch to the **Data Engineering** experience.
+Now that you have a workspace, it's time to create a data lakehouse for your data files.
 
-   ![Screenshot of the experience switcher menu.](./images/DP-900-dataengineering.png)
-
-    >**Note:** The data engineering home page includes tiles to create commonly used data engineering assets.
-
-2. In the **Data engineering** home page, select **Lakehouse(Preview)**. On the **New Lakehouse** page, enter the name of your choice, and select **Create**.
+1. In the **Data engineering** home page, select **Lakehouse(Preview)**. On the **New Lakehouse** page, enter the name of your choice, and select **Create**.
 
    ![Screenshot of a new lakehouse.](./images/DP-900-lakehouse.png)
 
@@ -68,20 +64,20 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. On the **Home** page for your lakehouse, select **Get data** drop-down, select **New data pipeline**, and create a new data pipeline named **Ingest Sales Data**.
+1. On the **Home** page for your lakehouse, select **Get data** drop-down, select **New data pipeline**, and create a new data pipeline named **Ingest Data**.
 
-1. In the **Copy Data into Lakehouse** wizard, on the **Choose a data source** page, select the **Retail Data Model from Wide World Importers**. Select **Next** and view the tables in the data source on the **Connect to data source** page..
-
+1. In the **Copy Data into Lakehouse** wizard, on the **Choose a data source** page, select the **Sample data** and then select the **NYC Taxi - Green**.
+   
    ![Screenshot of a new lakehouse.](./images/choose-data-source.png)
 
-1. Select the **dimension_stock_item** table, which contains records of products. Then select **Next** to progress to the **Choose data destination** page.
+1. On the **Connect to data source** page, view the tables in the data source. There should be one table that contains details of taxi trips in New York City. Then select **Next** to progress to the **Choose data destination** page.
 
 1. On the **Choose data destination** page, select your existing lakehouse. Then select **Next**.
 
 1. Set the following data destination options, and then select **Next**:
     - **Root folder**: Tables
     - **Load settings**: Load to new table
-    - **Destination table name**: dimension_stock_item
+    - **Destination table name**: taxi_rides *(You may need to wait for the column mappings preview to be displayed before you can change this)*
     - **Column mappings**: *Leave the default mappings as-it-is*
     - **Enable partition**: *Unselected*
 
@@ -91,31 +87,32 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     ![Screenshot of a pipeline with a Copy Data activity.](./images/DP-900-copy.png)
 
-    >**Note:** When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
+    >**Note:** When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded (which may take 10 minutes or more).
 
 1. In the hub menu bar on the left, select your lakehouse.
 
-1. On the **Home** page, in the **Lakehouse explorer** pane, expand **Tables** and verify that the **dimension_stock_item** table has been created.
+1. On the **Home** page, in the **Lakehouse explorer** pane, in the **...** menu for the **Tables** node, select **Refresh** and then expand **Tables** to verify that the **taxi_rides** table has been created.
 
-    >**Note**: If the new table is listed as *unidentified*, use the **Refresh** button in the lakehouse toolbar to refresh the view.
+    >**Note**:If the new table is listed as *unidentified*, use its **Refresh** menu option to refresh the view.
+    
+1. Select the **taxi_rides** table to view its contents.
 
 ## Task 4: Query data in a lakehouse
 
 Now that you have ingested data into a table in the lakehouse, you can use SQL to query it.
 
-1. At the top right of the Lakehouse page, switch to the **SQL analytics endpoint** for your lakehouse.
-
-    ![Screenshot of the SQL analytics endpoint menu.](./images/DP-900-sql.png)
+1. At the top right of the Lakehouse page, switch from **Lakehouse** view to the **SQL analytics endpoint** for your lakehouse.
 
 1. In the toolbar, select **New SQL query**. Then enter the following SQL code into the query editor:
 
     ```sql
-    SELECT Brand, COUNT(StockItemKey) AS Products
-    FROM dimension_stock_item
-    GROUP BY Brand
+    SELECT  DATENAME(dw,lpepPickupDatetime) AS Day,
+            AVG(tripDistance) As AvgDistance
+    FROM taxi_rides
+    GROUP BY DATENAME(dw,lpepPickupDatetime)
     ```
 
-1. Select the **&#9655; Run** button to run the query and review the results, which should reveal that there are two brand values (*N/A* and *Northwind*) and show the number of products in each.
+1. Select the **&#9655; Run** button to run the query and review the results, which should include the average trip distance for each day of the week.
 
     ![Screenshot of a SQL query.](./images/sql-query.png)
 
@@ -123,26 +120,18 @@ Now that you have ingested data into a table in the lakehouse, you can use SQL t
 
 Microsoft Fabric lakehouses organize all tables in a semantic data model, which you can use to create visualizations and reports.
 
-1. At the bottom left of the page, under the **Explorer** pane, select the **Model** tab to see the data model for the tables in the lakehouse (in this case there is only one table).
-
-    ![Screenshot of the model page in a Fabric lakehouse.](./images/fabric-model.png)
-
-1. In the toolbar, select **New report** to open a new browser tab containing the Power BI report designer.
-
-  >**Note:** If they ask for login, login with your credentials.
-
-   >**Note:** If an **Action Required** page appears, select **Ask later**.
-
+1. At the bottom left of the page, under the **Explorer** pane, select the **Model** tab to see the data model for the tables in the lakehouse (this includes system tables as well as the **taxi_rides** table).
+1. In the toolbar, select **New report** to create a new report based on the **taxi_rides**.
+   
 1. In the report designer:
-    1. In the **Data** pane, expand the **dimension_stock_item** table and select the **Brand** and **StockItemKey** fields.
-    
-    1. In the **Visualizations** pane, select the **Stacked bar chart** visualization (it's the first one listed). Then ensure that the **Y-axis** contains the **Brand** field and change the aggregation in the **X-axis** to **Count** so that it contains the **Count of StockItemKey** field. Finally, resize the visualization in the report canvas to fill the available space.
-
+    1. In the **Data** pane, expand the **taxi_rides** table and select the **lpepPickupDatetime** and **passengerCount** fields.
+    1. In the **Visualizations** pane, select the **Line chart** visualization. Then ensure that the **X-axis** contains the **lpepPickupDatetime** field and the **Y** axis contains **Sum of passengerCount**.
+       
         ![Screenshot of a Power BI report.](./images/fabric-report.png)
 
     **Tip**: You can use the **>>** icons to hide the report designer panes in order to see the report more clearly.
 
-1. On the **File** menu, select **Save** to save the report as **Brand Quantity Report** in your Fabric workspace.
+1. On the **File** menu, select **Save** to save the report as **Taxi Rides Report** in your Fabric workspace.
 
     You can now close the browser tab contaning the report to return to your lakehouse. You can find the report in the page for your workspace in the Microsoft Fabric portal.
 
