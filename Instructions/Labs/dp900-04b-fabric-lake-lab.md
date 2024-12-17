@@ -133,7 +133,7 @@ Microsoft Fabric lakehouses organize all tables in a semantic data model, which 
 
 1. On the **File** menu, select **Save** to save the report as **Taxi Rides Report** in your Fabric workspace.
 
-    You can now close the browser tab contaning the report to return to your lakehouse. You can find the report in the page for your workspace in the Microsoft Fabric portal.
+    You can now close the browser tab containing the report to return to your lakehouse.  You can find the report in the page for your workspace in the Microsoft Fabric portal.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
