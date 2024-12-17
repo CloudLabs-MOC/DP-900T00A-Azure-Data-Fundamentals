@@ -1,7 +1,7 @@
 # Lab 01a: Explore Azure Database for PostgreSQL
 
 ## Lab scenario
-In this lab, you'll provision an Azure Database for PostgreSQL resources in your Azure subscription.
+In this lab, you'll provide an Azure Database for PostgreSQL resources for your Azure subscription.
 
 ## Lab objective
 
@@ -52,13 +52,15 @@ In this exercise, you'll provision an Azure Database for PostgreSQL resources.
 
     ![Screenshot of the Azure portal showing the Azure Database for PostgreSQL page.](images/dp900-1a-3(1-1).png)
 
-1. Review the options for managing your Azure Database for PostgreSQL resource.
+1. Review the options for managing your Azure Database for PostgreSQL resources.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+
+  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+
+   <validation step="b62e8efa-2544-4f0f-a6f7-297eed28d9c1" />
 
 ## Review
 In this lab, you have completed:
