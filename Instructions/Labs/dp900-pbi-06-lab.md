@@ -21,11 +21,10 @@ In this lab, you will perform the following tasks:
 
 ### Task 1: Import data
 
-1.  Open Power BI Desktop. The application interface should look similar to this, select **Get Started**, if it is asking for the Email, select cancel. :
+1.  Open Power BI Desktop. The application interface should look similar to this, select **Get Started**, if it is asking for the Email, select Cancel :
     
     ![The Power BI Desktop start screen](images/power-bi-start-1.png)
     
-
     Now you're ready to import the data for your report.
 
 2.  On the Power BI Desktop welcome screen, select  **Get data**, and then in the list of data sources, select  **Web**  and then select  **Connect**.
@@ -88,11 +87,11 @@ The three tables of data you've imported have been loaded into a data model, whi
     
 4.  In the products table, right-click the  **ProductName**  field (or open its  **⋮**  menu) and select  **Add to hierarchy**  >  **Category Hierarchy**. This adds the  **ProductName**  field to the hierarchy you created previously.
     
-5.  In the  **Fields**  pane, right-click  **Category Hierarchy**  (or open its  **...**  menu) and select  **Rename**. The rename the hierarchy to  **Categorized Product**.
+5.  In the  **Fields**  pane, right-click  **Category Hierarchy**  (or open its  **...**  menu) and select  **Rename**. The hierarchy will be renamed to  **Categorized Product**.
     
     ![Renaming the hierarchy](images/rename-hierarchy.png)
     
-6.  On the left-side edge, select the  **Data**  tab, and then in the  **Fields**  pane, select the  **customers**  table.
+6.   On the left-side edge, select the **Table view** tab, and then in the **Data** pane, select the **customers** table.
     
 7.  Select the  **City**  column header, and then set its  **Data Category**  property to  **City**:
     
