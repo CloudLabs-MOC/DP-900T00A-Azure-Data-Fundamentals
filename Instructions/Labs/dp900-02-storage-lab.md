@@ -3,7 +3,7 @@
 ## Lab scenario
 In this lab, you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
 
-## Lab objectives
+## Lab Objectives
 
 In this lab, you will perform following tasks:
 
@@ -27,37 +27,53 @@ In this exercise you'll provision an Azure Storage account in your Azure subscri
 
 The first step in using Azure Storage is to provision an Azure Storage account in your Azure subscription.
 
-1.  On the Azure portal home page, select  **＋ Create a resource**  from the upper left-hand corner and search for  _Storage account_. Then in the resulting  **Storage account**  page, select  **Create**.
+1. On the Azure portal home page, select  **＋ Create a resource**  from the upper left-hand corner. 
 
-     ![Screenshot of Azure Database for PostgreSQL deployment options](images/Dp900m2-01.png)
-    
-2.  Enter the following values on the  **Create a storage account**  page:
-    
-    -   **Subscription**: Select your Azure subscription.
-    -   **Resource group**:Choose the existing resource group **DP-900-Module2-<inject key="DeploymentID" enableCopy="false"/>**
-    -   **Storage account name**: **str<inject key="DeploymentID" enableCopy="false"/>**.
-    -   **Region**: Select any available location.
-    -   **Performance**:  _Standard_
-    -   **Redundancy**:  _Locally-redundant storage (LRS)_
+    ![](images/dp2-1.png)
 
-3.  Select  **Next: Advanced >**  and view the advanced configuration options. Then select  **Next: Networking >**  to view the networking options for your storage account.
-    
-4.  Select  **Next: Data protection >**  and then in the  **Recovery**  section,  deselect all of the  **Enable soft delete...**  options. These options retain deleted files for subsequent recovery, but can cause issues later.
-    
-5.  Continue through the remaining  **Next >**  pages without changing any of the default settings, and then on the  **Review**  page, wait for your selections to be validated and select  **Create**  to create your Azure Storage account.
-    
-6.  Wait for deployment to complete. Then go to the resource that was deployed.
-    
+1. Search for **Storage account (1)** and select **Storage account (2)**.
 
+    ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp2-2.png)
+
+1. On the **Storage account** page, click on the **Create (1)** dropdown and select **Storage account (2)**.    
+
+    ![](images/dp2-3.png)
+    
+1. Enter the following values on the  **Create a storage account**  page:
+    
+    - Subscription: **Leave default Azure subscription (1)**
+    - Resource group:Choose the existing resource group **DP-900-Module2-<inject key="DeploymentID" enableCopy="false"/> (2)**
+    - Storage account name: **str<inject key="DeploymentID" enableCopy="false"/> (3)**.
+    - Region: **Select any available location (4)**.
+    - Performance:  **Standard (5)**
+    - Redundancy:  **Locally-redundant storage(LRS) (6)**
+    - Click on **Next** thrice, to navigate to **Data protection** tab.
+
+      ![](images/dp2-4.png)    
+  
+1. On the **Data protection** tab, in the  **Recovery**  section,  deselect all of the  **Enable soft delete... (1)**  options. These options retain deleted files for subsequent recovery, but can cause issues later and then click on **Review+create (2)**.
+
+    ![](images/dp2-5.png)
+    
+1. Select  **Create**  to create your Azure Storage account.
+   
+1.  Wait for deployment to complete. Then click on **Go to resouce** to go to the resource that was deployed.
+
+    ![](images/dp2-6.png)
+    
 #### Task 2 : Explore blob storage
 
 Now that you have an Azure Storage account, you can create a container for blob data.
 
-1. Download the product1.json JSON file from https://aka.ms/product1.json and save it on your computer (you can save it in any folder - you'll upload it to blob storage later).
+1. Right click on the following link, https://aka.ms/product1.json, then click on **copy link** and then paste it on the browser. It will download the **product1.json** JSON file and press **Ctrl+S** to save it on your computer (you can save it in any folder - you'll upload it to blob storage later).
+
+1. Select **Downloads (1)**, keep the file name as **product1 (2)** then make sure that **Save as type** is **JSON** and click on **Save (3)**.
+
+    ![](images/dp2-7.png)
     
-      >**Note:** If the JSON file is displayed in your browser, save the page as **product1.json**.
+     >**Note:** If the JSON file is displayed in your browser, save the page as **product1.json**.
     
-2. In the Azure portal page go to the newly created storage account for your storage container, on the left side, in the  **Data storage**  section, select  **Containers**.
+1. In the Azure portal page go to the newly created storage account for your storage container, on the left side, in the  **Data storage**  section, select  **Containers**.
     
 3.  In the **Containers** page, select **&#65291; Container** and add a new container named **data** with an anonymous access level of **Private (no anonymous access)**..
     
