@@ -38,7 +38,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 ## Lab Validation
 
-1. After completing the task, hit the Validate button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
    ![](images/dpp6.png)
 
@@ -46,7 +46,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
 
-    ![Manage Your Virtual Machine](images/gext.png)
+    ![Manage Your Virtual Machine](images/dpp7.png)
 
     >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
 
