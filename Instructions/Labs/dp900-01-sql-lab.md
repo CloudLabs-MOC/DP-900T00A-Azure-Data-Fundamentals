@@ -23,6 +23,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 #### Task 1: Provision an Azure SQL Database resource
 
 1. In the Azure portal, click **+ Create a resource** in the upper left corner and search for **Azure SQL**. On the **Azure SQL** page, open the **Create** dropdown and select **Azure SQL**.
+
    ![](images//dpm101.png)
     
 1. Review the Azure SQL options that are available, and then in the  **SQL databases** (1)  tile, ensure  **Single database** (2)  is selected and select  **Create** (3).
