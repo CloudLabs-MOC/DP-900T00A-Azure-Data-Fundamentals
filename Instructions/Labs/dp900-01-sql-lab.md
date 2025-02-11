@@ -22,7 +22,8 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 
 #### Task 1: Provision an Azure SQL Database resource
 
-1. In the Azure portal, select  **＋ Create a resource**  from the upper left-hand corner and search for  _Azure SQL_. Then in the resulting  **Azure SQL**  page, select  **Create**.
+1. In the Azure portal, click **+ Create a resource** in the upper left corner and search for **Azure SQL**. On the **Azure SQL** page, open the **Create** dropdown and select **Azure SQL**.
+   ![](images//dpm101.png)
     
 1. Review the Azure SQL options that are available, and then in the  **SQL databases** (1)  tile, ensure  **Single database** (2)  is selected and select  **Create** (3).
     
@@ -32,11 +33,12 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
     -   **Subscription**: select your Azure subscription.
     -   **Resource group**: select existing resource group with a name **Dp900-module1-<inject key="DeploymentID" enableCopy="false"/>**.
-    -   **Database name**:  _AdventureWorks_
-    -   **Server**: Select  **Create new**  and create a new server with a unique name in any available location. In the Authentication method **Use SQL authentication**  and specify any name as the server admin login and a suitably complex password (remember the password - you'll need it later!), and select **OK**.
+    -   **Database name**:  **AdventureWorks**
+    -   **Server**: Select  **Create new**  and create a new server with a **name** - **sqlserver<inject key="DeploymentID" enableCopy="false"/>** in any available location. In the Authentication method **Use SQL authentication**  and specify **name** - **azureuser** as the server admin login and a suitably **password** - **Password.1!!** (remember the password - you'll need it later!), and select **OK**.
     -   **Want to use SQL elastic pool?**:  _No_
     -   **Compute + storage**: Leave unchanged
     -   **Backup storage redundancy**:  _Locally-redundant backup storage_
+    ![](images//dpm102.png)
 
 1. On the  **Create SQL Database**  page, select  **Next :Networking >**.
 
