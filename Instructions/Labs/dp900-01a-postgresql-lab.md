@@ -23,11 +23,11 @@ Before starting this lab, you should have the following prerequisites:
    - **Basic PostgreSQL Knowledge** – Understanding of PostgreSQL databases, including tables and queries.
 
 
-### Exercise 1: Explore Azure Database for PostgreSQL
+## Exercise 1: Explore Azure Database for PostgreSQL
 
 In this exercise, you'll provision an Azure Database for PostgreSQL resources.
 
-#### Task 1: Provision an Azure Database for PostgreSQL resource
+### Task 1: Provision an Azure Database for PostgreSQL resource
 
 In this task, you'll create an Azure Database for PostgreSQL resources for your Azure subscription.
  
