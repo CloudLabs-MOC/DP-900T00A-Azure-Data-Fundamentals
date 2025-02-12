@@ -47,17 +47,17 @@ In this exercise, you will provision an Azure SQL Database and use the **Query e
     
 1. Enter the following values on the  **Create SQL Database**  page:
     
-    - **Subscription**: Leave the default subscription **(1)**.
-    - **Resource group**: select existing resource group with a name **Dp900-module1-<inject key="DeploymentID" enableCopy="false"/> (2)**.
-    - **Database name**:  **AdventureWorks (3)**
-    - **Server**: Select  **Create new (4)** 
+    - Subscription: Leave the default subscription **(1)**.
+    - Resource group: select existing resource group with a name **Dp900-module1-<inject key="DeploymentID" enableCopy="false"/> (2)**.
+    - Database name:  **AdventureWorks (3)**
+    - Server: Select  **Create new (4)** 
 
       ![](images/dp5.png)    
     
     - Create a new server with the following details:
     
         - Sever name: **sqlserver<inject key="DeploymentID" enableCopy="false"/> (1)** 
-        - Location: Any available location **(2)**
+        - Location: **East US (2)**
         - Authentication method: Choose **Use SQL authentication (3)**
         - Sever admin login: **azureuser (4)** 
         - Password - **Password.1!! (5)** (remember the password - you'll need it later!)
@@ -70,8 +70,8 @@ In this exercise, you will provision an Azure SQL Database and use the **Query e
 
       ![](images/dp-7.png)
 
-    - **Compute + storage**: Leave unchanged **(6)**
-    - **Backup storage redundancy**:  **Locally-redundant backup storage (7)**
+    - Compute + storage: Leave unchanged **(6)**
+    - Backup storage redundancy:  **Locally-redundant backup storage (7)**
     - On the  **Create SQL Database**  page, select  **Next :Networking > (8)**.
 
       ![](images/dp8.png)

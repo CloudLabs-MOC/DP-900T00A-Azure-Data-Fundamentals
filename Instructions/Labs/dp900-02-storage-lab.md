@@ -30,7 +30,7 @@ Before starting this lab, you should have the following prerequisites:
 
 In this exercise you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
 
-#### Task 1: Provision an Azure Storage account
+### Task 1: Provision an Azure Storage account
 
 In this task, you will create an Azure Storage account in your Azure subscription as an initial step in working with Azure Storage.
 
@@ -51,12 +51,16 @@ In this task, you will create an Azure Storage account in your Azure subscriptio
     - Subscription: **Leave default Azure subscription (1)**
     - Resource group:Choose the existing resource group **DP-900-Module2-<inject key="DeploymentID" enableCopy="false"/> (2)**
     - Storage account name: **str<inject key="DeploymentID" enableCopy="false"/> (3)**.
-    - Region: **Select any available location (4)**.
+    - Region: **East US (4)**.
     - Performance:  **Standard (5)**
     - Redundancy:  **Locally-redundant storage(LRS) (6)**
-    - Click on **Next** thrice, to navigate to **Data protection** tab.
+    - Click on **Next** twice, to navigate to **Advanced** tab.
 
       ![](images/dp2-4.png)    
+
+1. On the Adavanced tab, make sure **enable hierarchical namespace** to support Azure Data Lake Storage Gen2 is unselected **(1)**. Then click on **Next (2)** twice to navigate to **Data protection** tab.      
+
+    ![](images/dpm2-1.png)
   
 1. On the **Data protection** tab, in the  **Recovery**  section,  deselect all of the  **Enable soft delete... (1)**  options. These options retain deleted files for subsequent recovery, but can cause issues later and then click on **Review+create (2)**.
 
@@ -68,7 +72,7 @@ In this task, you will create an Azure Storage account in your Azure subscriptio
 
     ![](images/dp2-6.png)
     
-#### Task 2 : Explore blob storage
+### Task 2 : Explore blob storage
 
 In this task, you will create a blob container to store and manage data within your Azure Storage account.
 
@@ -155,7 +159,7 @@ In this task, you will create a blob container to store and manage data within y
 1. Use the  **X**  icon at the top right in the  **data**  page to close the page and return to the  **Containers**  page.
     
 
-#### Task 3:  Explore Azure Data Lake Storage Gen2
+### Task 3:  Explore Azure Data Lake Storage Gen2
 
 In this task, you will use Azure Data Lake Store Gen2 to organize and manage access to blobs with hierarchical folders. You will also leverage Azure Blob Storage to host distributed file systems for big data analytics platforms.
 
@@ -167,7 +171,33 @@ In this task, you will use Azure Data Lake Store Gen2 to organize and manage acc
 
     ![](images/dp2-24.png)
 
-1. In the pane on the left side, in the top section, select  **Storage browser (1)**  and navigate back to the root of your  **data (2)**  blob container, which still contains the  **product_data (3)**  folder.
+1. In the Azure portal page for your storage account, on the left side, scroll down to the **Settings (1)** section, and select **Data Lake Gen2 upgrade (2)**.  
+
+    ![](images/dpm2-2.png)
+
+1. In the **Data Lake Gen2 upgrade** page, expand and complete each step to upgrade your storage account to enable hierarchical namespace and support Azure Data Lake Storage Gen 2. This may take some time.    
+
+1. Expand **Step 1(1)**, click on **Review and agree to changes (2)** then select the acknowledge check box **(3)** and then click on **Agree to changes (3)**. 
+
+    ![](images/dpm2-3.png)
+
+1. Once the **Step 1** is completed, expand **Step 2 (1)** then click on **Start Validation (2)**.
+
+    ![](images/dpm2-4.png)
+
+     >**Note**: This may take some time. Please wait untill it is completed.
+
+1. After **Step 2** is completed, expand **Step 3 (1)** then click on **Start Upgrade (2)**.
+
+    ![](images/dpm2-5.png)
+
+     >**Note**: This may take some time. Please wait untill it is completed.
+
+1. Make sure all the steps are completed.
+
+    ![](images/dpm2-6.png)
+
+1. When the upgrade is complete, in the pane on the left side, in the top section, select  **Storage browser (1)**  and navigate back to the root of your  **data (2)**  blob container, which still contains the  **product_data (3)**  folder.
 
     ![](images/dp2-25.png)
 
@@ -196,6 +226,10 @@ In this task, you will use Azure Data Lake Store Gen2 to organize and manage acc
 1. On the left side, in the  **Data storage**  section, select  **Containers**.
 
 1. Open the  **data**  container, and verify that the  **product_data**  folder you created is listed.
+
+1. Select the **elipsis (‧‧‧) (1)** icon at the right-end of the folder, and note that with **hierarchical namespace enabled**, you can perform configuration tasks at the folder-level; including **renaming folders and setting permissions (2)**.
+
+    ![](images/dpm2-7.png)
 
 1. Use the  **X**  icon at the top right in the  **data**  page to close the page and return to the  **Containers**  page.
 
