@@ -15,42 +15,67 @@ In this lab, you will perform:
 
 ![](images/sc900module1a.png)  
 
-### Exercise 1: Explore Azure Database for PostgreSQL
+## Lab Prerequisites
+
+Before starting this lab, you should have the following prerequisites:
+
+   - **Azure Subscription** – An active Azure account with permissions to create and manage Azure Database for PostgreSQL resources.
+   - **Basic PostgreSQL Knowledge** – Understanding of PostgreSQL databases, including tables and queries.
+
+
+## Exercise 1: Explore Azure Database for PostgreSQL
 
 In this exercise, you'll provision an Azure Database for PostgreSQL resources.
 
-#### Task 1: Provision an Azure Database for PostgreSQL resource
- 
-1. In the Azure portal, select **&#65291; Create a resource** (1) from the upper left-hand corner and search for **Azure Database for PostgreSQL** (2).  From the marketplace select the **Azure Database for PostgreSQL Flexible Serve** (3).
- 
-    ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp900-1a-1(1).png)
+### Task 1: Provision an Azure Database for PostgreSQL resource
 
-1. Review the Azure Database for PostgreSQL options that are available, and then in the **Azure Database for PostgreSQL** (1) tile, select **Azure Database for PostgreSQL Flexible server** (2), then **Create** (3).
+In this task, you'll create an Azure Database for PostgreSQL resources for your Azure subscription.
+ 
+1. In the Azure portal, select **&#65291; Create a resource** (1) from the upper left-hand corner.
 
-    ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp900-1a-2(1).png)
+    ![](images/dp1.png)  
+
+ 1. Search for **Azure Database for PostgreSQL (1)**. From the marketplace select the **Azure Database for PostgreSQL Flexible Server (2)**.
+ 
+    ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp01-1.png)
+
+1. Then in the **Azure Database for PostgreSQL**tile, click on **Create (1)** drop down and select  **Azure Database for PostgreSQL Flexible server (2)**.
+
+    ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp01-2.png)
 
 1. Enter the following values on the **Create SQL Database** page:
-    - **Subscription**: Select your Azure subscription.
-    - **Resource group**: Choose the existing resource group **Dp-900-lab01a-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Server name**: **postgresql-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Region**: Select a region near you.
-    - **PostgreSQL version**: Leave unchanged.
-    - **Workload type**: Select **Development**.
-    - **Compute + storage**: Leave unchanged.
-    - **Availability zone**: Leave unchanged.
-    - **Enable high availability**: Leave unchanged.
-    - **Admin username**: Your name.
-    - **Password** and **Confirm password**: A suitably complex password.
+    - Subscription: Leave your default Azure subscription **(1)**
+    - Resource group: Choose the existing resource group **Dp-900-lab01a-<inject key="DeploymentID" enableCopy="false"/> (2)**
+    - Server name: **postgresql-<inject key="DeploymentID" enableCopy="false"/> (3)**
+    - Region: Select **EastUS (4)**.
+    - PostgreSQL version: Leave unchanged **(5)**
+    - Workload type: Select **Development (6)**
+    - Compute + storage: Leave unchanged **(7)**
 
-1. Select **Next: Networking >**.
+      ![](images/dp01-3.png)  
 
-1. Under **Firewall rules**, select **&#65291; Add current client IP address**.
+    - Availability zone: Leave unchanged **(8)**
+    - Enable high availability: Leave unchanged **(9)**
 
-1. Select **Review + Create**, and then select **Create** to create your Azure PostgreSQL database.
+      ![](images/dp01-7.png)  
 
-1. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
+    - Authentication method: select **PostgreSQL authentication only (10)** 
+    - Admin username: **azureuser (11)**
+    - Password: **Password1.!! (12)**
+    - Confirm password: **Password1.!! (13)**
+    - Select **Next: Networking > (14)**.
 
-    ![Screenshot of the Azure portal showing the Azure Database for PostgreSQL page.](images/dp900-1a-3(1-1).png)
+      ![](images/dp01-10.png)      
+
+1. Under **Firewall rules**, select **&#65291; Add current client IP address (1)**. Select **Review + Create (2)**.
+
+    ![Screenshot of the Azure portal showing the Azure Database for PostgreSQL page.](images/dp01-5.png)
+
+1. Then select **Create** to create your Azure PostgreSQL database.
+
+1. Wait for deployment to complete. Then select **Go to resources** to go to the resource that was deployed, which should look like this:
+
+    ![Screenshot of the Azure portal showing the Azure Database for PostgreSQL page.](images/dp01-9.png)
 
 1. Review the options for managing your Azure Database for PostgreSQL resources.
 
