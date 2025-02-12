@@ -19,6 +19,13 @@ In this lab, you will perform following tasks:
 
 ![](images/sc900module2.png)  
 
+## Lab Prerequisites
+
+Before starting this lab, you should have the following prerequisites:
+
+  - **Azure Subscription** – An active Azure account with permissions to create and manage storage resources.
+  - **Basic Storage Concepts** – Understanding of cloud storage types such as blobs, files, and tables.
+
 ## Exercise 1: Explore Azure Storage
 
 In this exercise you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
