@@ -16,6 +16,13 @@ In this lab, you will perform:
 
 ![](images/sc900module1.png)
 
+## Lab Prerequisites
+
+Before starting this lab, you should have the following prerequisites:
+
+   - **Azure Subscription** – An active Azure account with the necessary permissions to create and manage Azure SQL Database resources.
+   - **Basic SQL Knowledge** – Understanding of SQL queries to interact with the database.
+
 ### Exercise 1: Provision Azure relational database services
 
 In this exercise, you will provision an Azure SQL Database and use the **Query editor (preview)** to interact with it. You will explore the database structure by expanding the **Tables** folder and executing SQL queries. Finally, you will modify and run a query to retrieve specific columns, verifying the database's functionality.
