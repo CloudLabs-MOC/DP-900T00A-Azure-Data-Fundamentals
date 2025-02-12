@@ -1,7 +1,7 @@
 # Lab 02: Explore Azure Storage
 
 ## Lab scenario
-In this lab, you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
+In this lab, you will provision an Azure Storage account and explore various storage options available in Azure. You will start by setting up an Azure Storage account, which serves as the foundation for storing different types of data. Then, you will explore Blob Storage for unstructured data, Azure Data Lake Storage Gen2 for hierarchical data management, Azure Files for cloud-based file sharing, and Azure Tables for key-value data storage. Through these tasks, you will gain hands-on experience in configuring and managing different Azure storage solutions.
 
 ## Lab Objectives
 
@@ -13,7 +13,7 @@ In this lab, you will perform following tasks:
 + Task 4: Explore Azure Files
 + Task 5: Explore Azure Tables
   
-## Estimated timing: 15 minutes
+## Estimated timing: 30 minutes
 
 ## Architecture diagram
 
