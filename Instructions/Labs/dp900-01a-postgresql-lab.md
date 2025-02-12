@@ -60,7 +60,7 @@ In this exercise, you'll provision an Azure Database for PostgreSQL resources.
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-   <validation step="b62e8efa-2544-4f0f-a6f7-297eed28d9c1" />
+   <validation step="98b27e93-ba07-43ac-9822-f875f8539b25" />
 
 ## Review
 In this lab, you have completed:
