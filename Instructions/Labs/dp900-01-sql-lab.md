@@ -102,7 +102,7 @@ In this exercise, you will provision an Azure SQL Database and use the **Query e
     
        >**Note:** _If an error message stating that the client IP address isn't allowed is displayed, select the  **Allowlist IP ...**  link at the end of the message to allow access and try to sign in again (you previously added you own computer's client IP address to the firewall rules, but the query editor may connect from a different address depending on your network configuration.)_
     
-1. The query editor looks like this:
+1. The **query editor** looks like this:
     
    ![Screenshot of the Azure portal showing the query editor.](images//query-editor.png)
     
