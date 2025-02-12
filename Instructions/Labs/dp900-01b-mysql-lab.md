@@ -58,9 +58,9 @@ In this exercise, you'll provision an Azure Database for MySQL resource.
 
    - Enable high availability: Leave unchanged **(9)**
    - Authentication method: **MySQL authentication only (10)**
-   - Admin username: **Student (11)**
-   - Password: **Password@1 (12)**
-   - Confirm password : **Password@1 (13)**
+   - Admin username: **azureuser (11)**
+   - Password: **Password.1!! (12)**
+   - Confirm password : **Password.1!! (13)**
    - Select **Next: Networking (14)**
 
      ![Screenshot of the Azure portal showing the Azure Database for MySQL page.](images/dp1b-5.png)   
