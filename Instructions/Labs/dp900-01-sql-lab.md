@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 ### Exercise 1: Provision Azure relational database services
 
-In this exercise, you'll provision and test an Azure SQL Database resource.
+In this exercise, you will provision an Azure SQL Database and use the **Query editor (preview)** to interact with it. You will explore the database structure by expanding the **Tables** folder and executing SQL queries. Finally, you will modify and run a query to retrieve specific columns, verifying the database's functionality.
 
 #### Task 1: Provision an Azure SQL Database resource
 
