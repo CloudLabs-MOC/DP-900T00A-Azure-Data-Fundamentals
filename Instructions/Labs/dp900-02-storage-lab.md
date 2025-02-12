@@ -51,7 +51,7 @@ In this task, you will create an Azure Storage account in your Azure subscriptio
     - Subscription: **Leave default Azure subscription (1)**
     - Resource group:Choose the existing resource group **DP-900-Module2-<inject key="DeploymentID" enableCopy="false"/> (2)**
     - Storage account name: **str<inject key="DeploymentID" enableCopy="false"/> (3)**.
-    - Region: **Select any available location (4)**.
+    - Region: **East US (4)**.
     - Performance:  **Standard (5)**
     - Redundancy:  **Locally-redundant storage(LRS) (6)**
     - Click on **Next** thrice, to navigate to **Data protection** tab.
